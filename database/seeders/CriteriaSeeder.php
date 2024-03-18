@@ -13,7 +13,7 @@ class CriteriaSeeder extends Seeder
      */
     public function run(): void
     {
-        Criteria::create([
+        Criteria::insert([
             ['name' => 'Penghasilan Orang Tua', 'score' => 40, 'weight' => '0.4', 'type' => 'Cost'],
             ['name' => 'Jarak Tempuh', 'score' => 30, 'weight' => '0.3', 'type' => 'Benefit'],
             ['name' => 'Pekerjaan Orang Tua', 'score' => 30, 'weight' => '0.3', 'type' => 'Cost'],
