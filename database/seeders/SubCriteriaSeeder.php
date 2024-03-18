@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Subcriteria;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,7 +13,7 @@ class SubCriteriaSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\SubCriteria::insert([
+        Subcriteria::insert([
             ['parent_id' => 1, 'name' => 'Rp. 0-Rp. 500.000', 'value' => 5],
             ['parent_id' => 1, 'name' => 'Rp. 500.001-Rp. 1.000.000', 'value' => 4],
             ['parent_id' => 1, 'name' => 'Rp. 1.000.001-Rp. 2.000.000', 'value' => 3],
