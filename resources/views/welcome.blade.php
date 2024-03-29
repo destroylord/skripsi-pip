@@ -98,10 +98,12 @@
             <div class="about-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/3_NZRBahmb0?si=xJlGlIzHQVMczUTC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="col-xl-6 col-lg-6 col-sm-12">
+                          <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/3_NZRBahmb0?si=xJlGlIzHQVMczUTC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6">
+                        <div class="col-xl-6 col-lg-6 col-sm-12">
                             <div class="about-content-wrapper">
                                 <div class="section-title">
                                     <h2 class="mb-40 wow fadeInRight" data-wow-delay=".4s">Sambutan Kepala Sekolah</h2>
