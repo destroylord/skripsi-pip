@@ -53,14 +53,16 @@ new class extends Component
                 class="sidebar-item has-sub">
                 <a href="#" class='sidebar-link'>
                     <i class="bi bi-collection-fill"></i>
-                    <span>PIP</span>
+                    <span>Perhitungan</span>
                 </a>
 
                  <ul class="submenu ">
 
                     <li class="submenu-item  ">
-                        <a href="#" class="submenu-link">Kandidat beasiswa</a>
-                        
+                        <a href="{{ route('admin.alternatives.index') }}" class="submenu-link">Alternative</a>
+                    </li>
+                    <li class="submenu-item  ">
+                        <a href="{{ route('admin.normalization.index') }}" class="submenu-link">Normalisasi Matrix</a>
                     </li>
                     
                 </ul>

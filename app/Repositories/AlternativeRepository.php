@@ -2,6 +2,8 @@
 
 namespace App\Repositories;
 
+use App\Models\Alternative;
+use App\Models\Criteria;
 use App\Models\Student;
 use Illuminate\Support\Facades\DB;
 
@@ -24,7 +26,22 @@ class AlternativeRepository
         }
 
         
-
         return $data;
+    }
+
+    public function index()
+    {
+
+        $criteria = Criteria::all();
+        $student = Student::all();
+
+        $student->map(function ($s) use ($criteria) {
+           $s->alternatives = $criteria->map(function ($c) use ($s) {
+               return Alternative::where('student_id', $s->id)->where('criteria_id', $c->id)->first();
+           });
+           return $s;
+        });
+
+        return (object) ['criterias' => $criteria, 'students' => $student];
     }
 }

@@ -20,7 +20,7 @@
     </head>
     <body>
     <script src="{{ asset('admin/assets/static/js/initTheme.js') }}"></script>
-    {{-- @livewireStyles --}}
+    @livewireStyles
 
     <div id="app">
         <div id="sidebar">
@@ -108,6 +108,7 @@
     <script src="{{ asset('admin/assets/extensions/datatables.net/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('admin/assets/extensions/datatables.net-bs5/js/dataTables.bootstrap5.min.js') }}"></script>
     <script src="{{ asset('admin/assets/static/js/pages/datatables.js') }}"></script>
-   {{-- @livewireScripts --}}
+   @livewireScripts
+   @stack('scripts')
 </body>
 </html>
