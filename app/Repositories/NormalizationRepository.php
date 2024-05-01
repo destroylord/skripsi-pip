@@ -2,7 +2,6 @@
 
 namespace App\Repositories;
 
-use Illuminate\Database\Eloquent\Collection;
 
 class NormalizationRepository 
 {
@@ -25,7 +24,6 @@ class NormalizationRepository
             
         }
 
-        // dd($alternative->students);
-         return (object) ['criterias' => $alternative->criterias, 'students' => $alternative->students];
+        return (object) ['criterias' => $alternative->criterias, 'students' => $alternative->students];
     }
 }

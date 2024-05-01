@@ -15,3 +15,6 @@ Volt::route('alternatives', 'pages.calculation.alternatives')->name('alternative
 
 // Normalisasi
 Volt::route('normalization', 'pages.calculation.normalization')->name('normalization.index');
+
+// Rangking
+Volt::route('rangking', 'pages.calculation.rangking')->name('rangking.index');

@@ -64,6 +64,9 @@ new class extends Component
                     <li class="submenu-item  ">
                         <a href="{{ route('admin.normalization.index') }}" class="submenu-link">Normalisasi Matrix</a>
                     </li>
+                    <li class="submenu-item  ">
+                        <a href="{{ route('admin.rangking.index') }}" class="submenu-link">rangking</a>
+                    </li>
                     
                 </ul>
             </li>
