@@ -17,7 +17,7 @@ layout('layouts.app');
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        {{-- <livewire:alternative-component/> --}}
+                        <livewire:normalization-component/>
                     </div>
                 </div>
             </div>
