@@ -21,17 +21,18 @@ return new class extends Migration
             $table->string('kindergarten');
             $table->text('kindergarten_address');
             $table->text('home_address');
-            $table->string('school_distance'); // jarak sekolah
             $table->string('father_name');
-            $table->string('father_occupation');
             $table->text('father_address');
             $table->string('father_birth_place');
             $table->date('father_birth_date');
             $table->string('mother_name');
-            $table->string('mother_occupation');
             $table->text('mother_address');
             $table->string('mother_birth_place');
             $table->date('mother_birth_date');
+
+            $table->string('birth_certificate')->nullable(); // fotokopi akta kelahiran
+            $table->string('family_card')->nullable(); //fotokopi kartu keluarga
+            $table->string('kindergarten_certificate')->nullable(); //fotokopi ijazah tk (jika ada)'); 
             $table->timestamps();
 
         });

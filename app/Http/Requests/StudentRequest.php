@@ -31,15 +31,16 @@ class StudentRequest extends FormRequest
             'kindergarten_address' => 'required|string',
             'home_address' => 'required|string',
             'father_name' => 'required|string',
-            'father_occupation' => 'required|string',
             'father_address' => 'required|string',
             'father_birth_place' => 'required|string',
             'father_birth_date' => 'required|date',
             'mother_name' => 'required|string',
-            'mother_occupation' => 'required|string',
             'mother_address' => 'required|string',
             'mother_birth_place' => 'required|string',
             'mother_birth_date' => 'required|date',
+            'birth_certificate' => 'required|file|mimes:pdf|max:5120',
+            'family_card' => 'required|file|mimes:pdf|max:5120',
+            'kindergarten_certificate' => 'required|file|mimes:pdf|max:5120',
         ];
     }
 
@@ -65,15 +66,16 @@ class StudentRequest extends FormRequest
             'kindergarten_address' => 'Alamat taman kanak-kanak',
             'home_address' => 'Alamat rumah',
             'father_name' => 'Nama ayah',
-            'father_occupation' => 'Pekerjaan ayah',
             'father_address' => 'Alamat ayah',
             'father_birth_place' => 'Tempat lahir ayah',
             'father_birth_date' => 'Tanggal lahir ayah',
             'mother_name' => 'Nama ibu',
-            'mother_occupation' => 'Pekerjaan ibu',
             'mother_address' => 'Alamat ibu',
             'mother_birth_place' => 'Tempat lahir ibu',
             'mother_birth_date' => 'Tanggal lahir ibu',
+            'birth_certificate' => 'Fotokopi Sertifikat lahir',
+            'family_card' => 'Fotokopi Kartu keluarga',
+            'kindergarten_certificate' => 'Fotokopi Sertifikat TK',
         ];
     }
 

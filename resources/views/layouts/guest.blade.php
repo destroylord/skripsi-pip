@@ -23,17 +23,17 @@
     <div class="col-lg-5 col-12">
         <div id="auth-left">
             <div class="auth-logo">
-                <a href="index.html"><img src="admin/assets/compiled/svg/logo.svg" alt="Logo"></a>
+                <a href="/"><img src="{{ asset('img/skotga-logo.png') }}" class="w-25 h-25" alt="Logo"></a>
             </div>
-            <h1 class="auth-title">Log in.</h1>
-            <p class="auth-subtitle mb-5">Log in with your data that you entered during registration.</p>
+            {{-- <h1 class="auth-title">Masuk</h1> --}}
+            <p class="auth-subtitle mb-5">Halaman ini dikhususkan untuk admin.</p>
 
                 {{ $slot }}
-            <div class="text-center mt-5 text-lg fs-4">
+            {{-- <div class="text-center mt-5 text-lg fs-4">
                 @if (Route::has('password.request'))
                 <p><a class="font-bold" href="{{ route('password.request') }}" wire:nagivate>Forgot password?</a>.</p>
                 @endif
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="col-lg-7 d-none d-lg-block">

@@ -27,7 +27,20 @@ class StudentController extends Controller
     {
        
         $requestData = $request->all();
-        $student  = Student::create($requestData);
+
+        // Inisialisasi default value untuk dokumen
+        $requestData['birth_certificate'] = null;
+        $requestData['family_card'] = null;
+        $requestData['kindergarten_certificate'] = null;
+
+        // Periksa jika terdapat file yang diunggah dan simpan sesuai dengan jenisnya
+        if ($request->hasFile('birth_certificate') && $request->hasFile('family_card') && $request->hasFile('kindergarten_certificate')) {
+            $requestData['birth_certificate'] = $this->uploadDocument($request, 'birth_certificate');
+            $requestData['family_card'] = $this->uploadDocument($request, 'family_card');
+            $requestData['kindergarten_certificate'] = $this->uploadDocument($request, 'kindergarten_certificate');
+        }
+        
+        $student = Student::create($requestData);
 
         foreach ($request->subcriteria_id as $key => $value) {
             DB::table('student_criterias')->insert([
@@ -46,5 +59,16 @@ class StudentController extends Controller
 
         return SubCriteria::where('parent_id', $id)->get();
         
+    }
+
+    // Fungsi untuk mengunggah dokumen
+    private function uploadDocument($request, $documentName)
+    {
+        $documentFile = $request->file($documentName);
+        $fileName = $documentFile->getClientOriginalName();
+        $path = str_replace(' ', '-', "documents/".$request->full_name."/{$documentName}".str_replace(' ', '-', $request->name));
+
+        // Simpan file dengan nama unik
+        return $documentFile->storeAs($path, $fileName, 'public');
     }
 }

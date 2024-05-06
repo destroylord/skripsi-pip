@@ -8,11 +8,6 @@
                 <x-input-error :messages="$errors->get('father_name')" class="mt-2" />
             </div>
             <div class="mt-4">
-                <label class="form-label">Pekerjaan Ayah</label>
-                <input type="text" class="form-control" placeholder="Contoh: Wiraswasta" name="father_occupation" value="{{ old('father_occupation') }}">
-                <x-input-error :messages="$errors->get('father_occupation')" class="mt-2" />
-            </div>
-            <div class="mt-4">
                 <label for="birth_place" class="form-label">Tempat Lahir</label>
                 <input type="text" class="form-control" name="father_birth_place" placeholder="Contoh: Bondowoso" value="{{ old('father_birth_place') }}"/>
                 <x-input-error :messages="$errors->get('father_birth_place')" class="mt-2" />
@@ -53,11 +48,6 @@
                 <label for="mother_name" class="form-label">Nama Ibu</label>
                 <input type="text" class="form-control" name="mother_name" value="{{ old('mother_name') }}" placeholder="Nama Ibu"/>
                 <x-input-error :messages="$errors->get('mother_name')" class="mt-2" />
-            </div>
-            <div class="mt-4">
-                <label class="form-label">Pekerjaan Ibu</label>
-                <input type="text" class="form-control" value="{{ old('mother_occupation') }}" placeholder="Contoh: Ibu Rumah Tangga" name="mother_occupation">
-                <x-input-error :messages="$errors->get('mother_occupation')" class="mt-2" />
             </div>
             <div class="mt-4">
                 <label for="birth_place" class="form-label">Tempat Lahir</label>

@@ -21,7 +21,7 @@ new class extends Component
             
             <li
                 class="sidebar-item active ">
-                <a href="{{ route('admin.dashboard') }}" wire:navigate class='sidebar-link'>
+                <a href="{{ route('admin.dashboard') }}"  wire:navigate class='sidebar-link'>
                     <i class="bi bi-grid-fill"></i>
                     <span>Dashboard</span>
                 </a>
@@ -38,11 +38,11 @@ new class extends Component
                  <ul class="submenu ">
 
                     <li class="submenu-item  ">
-                        <a href="{{ route('admin.criteria.index') }}" wire:navigate class="submenu-link">Kriteria</a>
+                        <a href="{{ route('admin.criteria.index') }}" :active="request()->routeIs('admin.criteria.index')" wire:navigate class="submenu-link">Kriteria</a>
                         
                     </li>
                     <li class="submenu-item  ">
-                        <a href="{{ route('admin.sub-criteria') }}" wire:navigate class="submenu-link">Sub Kriteria</a>
+                        <a href="{{ route('admin.sub-criteria') }}" :active="request()->routeIs('admin.sub-criteria')" wire:navigate class="submenu-link">Sub Kriteria</a>
                         
                     </li>
                     
@@ -59,52 +59,52 @@ new class extends Component
                  <ul class="submenu ">
 
                     <li class="submenu-item  ">
-                        <a href="{{ route('admin.alternatives.index') }}" class="submenu-link">Alternative</a>
+                        <a href="{{ route('admin.alternatives.index') }}" :active="request()->routeIs('admin.alternatives.index')" class="submenu-link">Alternative</a>
                     </li>
                     <li class="submenu-item  ">
-                        <a href="{{ route('admin.normalization.index') }}" class="submenu-link">Normalisasi Matrix</a>
+                        <a href="{{ route('admin.normalization.index') }}" :active="request()->routeIs('admin.normalization.index')" class="submenu-link">Normalisasi Matrix</a>
                     </li>
                     <li class="submenu-item  ">
-                        <a href="{{ route('admin.rangking.index') }}" class="submenu-link">rangking</a>
+                        <a href="{{ route('admin.rangking.index') }}" :active="request()->routeIs('admin.rangking.index')" class="submenu-link">rangking</a>
                     </li>
                     
                 </ul>
             </li>
             
-            <li
+            {{-- <li
                 class="sidebar-item  ">
                 <a href="https://github.com/zuramai/mazer#donation" data-bs-toggle="modal" data-bs-target="#backdrop" class='sidebar-link'>
                     <i class="bi bi-box-arrow-left"></i>
                     <span>Logout</span>
                 </a>
-            </li>
+            </li> --}}
 
             <div class="modal fade text-left" id="backdrop" tabindex="-1" role="dialog"
                                 aria-labelledby="myModalLabel4" data-bs-backdrop="false" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title" id="myModalLabel4">Keluar Aplikasi</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                            Apakah Anda yakin ingin keluar dari aplikasi?
-                                            </p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-light-secondary"
-                                                data-bs-dismiss="modal">
-                                                <i class="bx bx-x d-block d-sm-none"></i>
-                                                <span class="d-none d-sm-block">Tutup</span>
-                                            </button>
-                                            <button type="button" wire:click="logout" class="btn btn-primary ms-1" data-bs-dismiss="modal">
-                                                <i class="bx bx-check d-block d-sm-none"></i>
-                                                <span class="d-none d-sm-block">Iya saya yakin</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel4">Keluar Aplikasi</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                            Apakah Anda yakin ingin keluar dari aplikasi?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light-secondary"
+                                data-bs-dismiss="modal">
+                                <i class="bx bx-x d-block d-sm-none"></i>
+                                <span class="d-none d-sm-block">Tutup</span>
+                            </button>
+                            <button type="button" wire:click="logout" class="btn btn-primary ms-1" data-bs-dismiss="modal">
+                                <i class="bx bx-check d-block d-sm-none"></i>
+                                <span class="d-none d-sm-block">Iya saya yakin</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </ul>
     </div>

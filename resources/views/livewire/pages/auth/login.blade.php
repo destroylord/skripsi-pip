@@ -75,7 +75,7 @@ new #[Layout('layouts.guest')] class extends Component
     <form wire:submit="login">
         <!-- Email Address -->
         <div class="form-group position-relative has-icon-left mb-4">
-            <input wire:model="email" type="email" email="email" required autofocus class="form-control form-control-xl" placeholder="Username">
+            <input wire:model="email" type="email" email="email" required autofocus class="form-control form-control-xl" placeholder="Email">
             <div class="form-control-icon">
                 <i class="bi bi-person"></i>
             </div>
@@ -89,23 +89,23 @@ new #[Layout('layouts.guest')] class extends Component
                 class="form-control form-control-xl"
                 name="password"
                 required
-                placeholder="Password">
+                placeholder="Kata Sandi">
             <div class="form-control-icon">
                 <i class="bi bi-shield-lock"></i>
             </div>
         </div>
 
         <!-- Remember Me -->
-        <div class="block mt-4">
+        {{-- <div class="block mt-4">
             <label for="remember" class="inline-flex items-center">
                 <input wire:model="remember" id="remember" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
                 <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
             </label>
-        </div>
+        </div> --}}
 
         <div class="flex items-center justify-end mt-4">
 
-            <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Login</button>
+            <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">masuk</button>
         </div>
     </form>
 </div>
