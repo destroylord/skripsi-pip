@@ -1,9 +1,10 @@
 <?php
 
-use function Livewire\Volt\{state, layout, computed, rules};
-// use App\Repositories\AlternativeRepository;
+use function Livewire\Volt\{state, layout, computed, rules, title};
 
 layout('layouts.app');
+title('Normalization')
+
 ?>
 
 <div>

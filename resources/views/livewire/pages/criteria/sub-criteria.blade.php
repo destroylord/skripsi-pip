@@ -1,10 +1,11 @@
 <?php
 
-use function Livewire\Volt\{state, layout, computed, rules, boot};
+use function Livewire\Volt\{state, layout, computed, rules, boot, title};
 use App\Models\{Criteria, SubCriteria};
 
 
 layout('layouts.app');
+title('Sub-Kriteria');
 
 state([
     'criterias' => Criteria::with('subCriterias')->get(),
@@ -48,7 +49,7 @@ $resetForm = function() {
                         </p>
                     </div>
                 
-                    <button class="btn btn-success w-50" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">+ Tambah Sub Kriteria</button>
+                    <button class="btn btn-primary w-25" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">+ Tambah Sub Kriteria</button>
 
                     <div class="col-lg-12 mt-4">
                         <form action="#">
@@ -58,6 +59,7 @@ $resetForm = function() {
                                         <th>Kriteria</th>
                                         <th>Sub Kriteria</th>
                                         <th>Nilai</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                     <tbody>
@@ -68,6 +70,10 @@ $resetForm = function() {
                                             <td>@if($firstRow) {{ $criteriaName }} @php $firstRow = false; @endphp @endif</td>
                                             <td>{{ $subCriteria->name }}</td>
                                             <td>{{ $subCriteria->value }}</td>
+                                            <td>
+                                                <a href="#" class="btn btn-sm btn-warning"><i class='bx bxs-edit' ></i></a>
+                                                <a href="#" class="btn btn-sm btn-danger"><i class='bx bxs-trash' ></i> </a>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     @endforeach
@@ -82,17 +88,19 @@ $resetForm = function() {
                         <div class="card-content">
                             <div class="card-body">
                                 <!-- Vertically Centered modal Modal -->
-                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable" role="document">
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalCenterTitle">Sub Kriteria</h5>
-                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                                                </button>
+                                                <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <div class="form-group">
+                                                <div class="mb-3">
                                                     <select name="" wire:model="parentCriteria" class="form-select" id="">
                                                         <option value="">-- Pilih Kriteria --</option>
                                                         @foreach ($this->criterias as $criteria)
@@ -103,13 +111,13 @@ $resetForm = function() {
                                                         <span>{{ $message }}</span>
                                                       @enderror
                                                 </div>
-                                                <div class="form-group">                                             
+                                                <div class="mb-3">                                             
                                                     <input type="text" wire:model="subCriteriaName" class="form-control" placeholder="Sub Kriteria">
                                                     @error('subCriteriaName')
                                                         <span>{{ $message }}</span>
                                                     @enderror
                                                 </div>
-                                                <div class="form-group">
+                                                <div class="mb-3">
                                                     <input type="number" wire:model="subCriteriaValue" class="form-control" placeholder="Nilai Sub Kriteria">
                                                     @error('subCriteriaValue')
                                                         <span>{{ $message }}</span>

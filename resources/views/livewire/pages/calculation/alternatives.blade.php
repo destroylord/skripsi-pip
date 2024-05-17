@@ -1,9 +1,10 @@
 <?php
 
-use function Livewire\Volt\{state, layout, computed, rules};
+use function Livewire\Volt\{state, layout, computed, rules, title};
 use App\Repositories\AlternativeRepository;
 
 layout('layouts.app');
+title('Alternative')
 ?>
 
 <div>

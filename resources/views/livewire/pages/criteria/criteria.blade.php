@@ -1,9 +1,10 @@
 <?php
 
-use function Livewire\Volt\{state, layout, computed, rules};
+use function Livewire\Volt\{state, layout, computed, rules, title};
 use App\Models\Criteria;
 
 layout('layouts.app');
+title('Kriteria');
 
 
 state([
@@ -59,7 +60,7 @@ $deleteCriteria = function (Criteria $criteria) {
 
 <div>
   <div class="col-md-6">
-    <div class="card">
+    <div class="card mb-4">
         <div class="card-header">
             <h4 class="card-title">Form Kriteria</h4>
         </div>
@@ -72,9 +73,9 @@ $deleteCriteria = function (Criteria $criteria) {
                 </div>
                 <div class="col-md-12">
                     <form action="#" wire:submit="submit" method="POST" autocomplete="off">
-                        <div class="form-group row align-items-center">
+                        <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
-                                <label class="col-form-label" for="first-name">Nama Kriteria</label>
+                                <label for="first-name">Nama Kriteria</label>
                             </div>
                             <div class="col-lg-10 col-9">
                                 <input type="text" class="form-control" wire:model="name" placeholder="Contoh: Pekerjaan Orang tua">
@@ -83,9 +84,9 @@ $deleteCriteria = function (Criteria $criteria) {
                                 @enderror
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
+                        <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
-                                <label class="col-form-label" for="last-name">Nilai</label>
+                                <label for="last-name">Nilai</label>
                             </div>
                             <div class="col-lg-3 col-9">
                                 <input type="number" class="form-control" wire:model="score" placeholder="Contoh: 10">
@@ -95,9 +96,9 @@ $deleteCriteria = function (Criteria $criteria) {
                             </div>
                         </div>
 
-                         <div class="form-group row align-items-center">
+                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
-                                <label class="col-form-label" for="last-name">Tipe</label>
+                                <label for="last-name">Tipe</label>
                             </div>
                             <div class="col-lg-3 col-9">
                                 <select name="type" wire:model="type" class="form-control" id="">
@@ -111,7 +112,7 @@ $deleteCriteria = function (Criteria $criteria) {
                             </div>
                         </div>
                         
-                        <div class="form-group row align-items-center">
+                        <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
                                 <button class="btn btn-primary" {{ ($total_score >= 100) ? 'disabled' : '' }}>Submit</button>
                             </div>
@@ -156,17 +157,21 @@ $deleteCriteria = function (Criteria $criteria) {
                                     {{ $criteria->type }}
                                 </td>
                                 <td>
+                                    <div class="d-flex justify-self-center gap-2">
+                                  
                                     <button 
                                         class="btn btn-warning mr-2"
                                         wire:click="updatedCriteria({{ $criteria->id }})"
-                                        type="button">Edit</a>
+                                        type="button"> <i class='bx bxs-edit' ></i>Edit</a>
                                     <button
                                         class="btn btn-danger"
                                         type="button"
                                         wire:click="deleteCriteria({{ $criteria->id }})"
                                     >
+                                    <i class='bx bxs-trash' ></i>
                                         Delete
                                     </button>
+                                     </div>
                                 </td>
                             </tr>
                         @endforeach

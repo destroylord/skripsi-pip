@@ -12,10 +12,10 @@ use Livewire\Volt\Component;
 new #[Layout('layouts.guest')] class extends Component
 {
     #[Rule(['required', 'string', 'email'])]
-    public string $email = '';
+    public string $email = 'admin@mail.com';
 
     #[Rule(['required', 'string'])]
-    public string $password = '';
+    public string $password = 'password';
 
     #[Rule(['boolean'])]
     public bool $remember = false;
@@ -39,8 +39,8 @@ new #[Layout('layouts.guest')] class extends Component
         session()->regenerate();
 
         $this->redirect(
-            session('url.intended', RouteServiceProvider::HOME),
-            navigate: true
+            session('url.intended', '/admin/dashboard'),
+            navigate: false
         );
     }
 
@@ -72,7 +72,7 @@ new #[Layout('layouts.guest')] class extends Component
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form wire:submit="login">
+    <form wire:submit="login" id="formAuthentication" class="mb-3">
         <!-- Email Address -->
         <div class="form-group position-relative has-icon-left mb-4">
             <input wire:model="email" type="email" email="email" required autofocus class="form-control form-control-xl" placeholder="Email">
@@ -89,10 +89,12 @@ new #[Layout('layouts.guest')] class extends Component
                 class="form-control form-control-xl"
                 name="password"
                 required
-                placeholder="Kata Sandi">
+                placeholder="Kata Sandi"
+                >
             <div class="form-control-icon">
                 <i class="bi bi-shield-lock"></i>
             </div>
+             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
         <!-- Remember Me -->
@@ -103,9 +105,9 @@ new #[Layout('layouts.guest')] class extends Component
             </label>
         </div> --}}
 
-        <div class="flex items-center justify-end mt-4">
+        <div class="flex items-center justify-end ">
 
-            <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">masuk</button>
+            <button type="submit" class="btn btn-primary btn-block shadow-lg">Masuk</button>
         </div>
     </form>
 </div>
