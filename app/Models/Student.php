@@ -22,7 +22,7 @@ class Student extends Model
     public function subCriterias() {
 
         return $this->belongsToMany(
-            SubCriteria::class, 'student_criterias', 
+            Subcriteria::class, 'student_criterias', 
         );
             
     

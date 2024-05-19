@@ -93,7 +93,7 @@
         <!-- ========================= feature-section end ========================= -->
 
         
-        <!--========================= about-section start========================= -->
+        <!--========================= sambutan-kelapa-sekolah start========================= -->
         <section id="about" class="pt-100">
             <div class="about-section">
                 <div class="container">
@@ -120,10 +120,10 @@
                 </div>
             </div>
         </section>
-        <!--========================= about-section end========================= -->
+        <!--========================= sambutan-kelapa-sekolah end========================= -->
 
-        <!-- ========================= contact-section start ========================= -->
-        <section id="contact" class="contact-section cta-bg img-bg pt-110 pb-100" style="');">
+        <!-- ========================= visi-misistart ========================= -->
+        <section id="contact" class="visi-misicta-bg img-bg pt-110 pb-100" style="');">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6">
@@ -160,20 +160,17 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
                         <div class="section-title text-center mb-55">
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Guru & Staff</h2>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Lokasi Sekolah</h2>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12 col-md-12">
-    
-                        <div class="owl-carousel">
-                            <div class="item"><img src="./front/assets/img/staff/IMG_1.jpg" alt="" style="height: 500px; object-fit: cover; object-position: top;"></div>
-                            <div class="item"><img src="./front/assets/img/staff/IMG_2.png" alt="" style="height: 500px; object-fit: cover; object-position: top;"></div>
-                            <div class="item"><img src="./front/assets/img/staff/IMG_3.jpg" alt="" style="height: 500px; object-fit: cover; object-position: top;"></div>
-                            <div class="item"><img src="./front/assets/img/staff/IMG_4.jpg" alt="" style="height: 500px; object-fit: cover; object-position: top;"></div>
-                        </div>
+                    <div class="col-lg-6 col-md-12">
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+
                     </div>
                 </div>
             </div>
