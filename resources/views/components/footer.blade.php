@@ -1,5 +1,5 @@
         <!-- ========================= footer start ========================= -->
-        <footer class="footer pt-100">
+        <footer class="footer pt-100" id="kontak">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
@@ -49,19 +49,19 @@
                             </ul>
                         </div>
                     </div> --}}
-                    <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="col-xl-5 col-lg-5 col-md-6">
                         <div class="footer-widget mb-60 wow fadeInRight" data-wow-delay=".8s">
                             <h4>Contact</h4>
                             <ul class="footer-contact">
                                 <li>
-                                    <p>+00983467367234</p>
+                                    <p>082335623028</p>
                                 </li>
                                 <li>
-                                    <p>yourmail@gmail.com</p>
+                                    <p>skotga@gmail.com</p>
                                 </li>
                                 <li>
-                                    <p>United State Of America
-                                    *12 Street House</p>
+                                    <p>Jl. Saliwiryo Pranowo No.28, Pattian, Kotakulon, Kec. Bondowoso, Kabupaten Bondowoso, Jawa Timur <br>
+                                        <b>Kode Pos: </b> 68219</p>
                                 </li>
                             </ul>
                         </div>
@@ -81,8 +81,8 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <p class="wow fadeInUp" data-wow-delay=".3s">Template Designed by <a
-                                    href="https://GrayGrids.com" rel="nofollow">GrayGrids</a></p>
+                            <p class="wow fadeInUp" data-wow-delay=".3s">&copy; {{ date('Y') }} Designed by <a
+                                    href="https://dafrinmaulana.my.id" rel="nofollow">Dafrin</a></p>
                         </div>
                     </div>
                 </div>

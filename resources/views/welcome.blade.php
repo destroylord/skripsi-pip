@@ -122,16 +122,51 @@
         </section>
         <!--========================= sambutan-kelapa-sekolah end========================= -->
 
-        <!-- ========================= visi-misistart ========================= -->
-        <section id="contact" class="visi-misicta-bg img-bg pt-110 pb-100" style="');">
+        <!--========================= Berita ========================= -->
+        <section id="berita" class="pt-100 pb-100">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center mb-55">
+                            <h2>Berita</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel owl-theme">
+                        @for ($i = 0; $i < 10; $i++)
+                            <div class="card shadow-md">
+                                <img src="{{ asset('img/berita-1.jpg') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4>Judul</h4>
+                                    <p style="font-size: 15px">Ini adalah isi card body, bisa diisi dengan deskripsi tentang berita terbaru.</p>
+                                </div>
+                                <div class="p-3 d-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary btn-sm">Baca Selanjutnya</button>
+                                </div>
+                            </div>
+                        @endfor
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================= Berita ========================= -->
+
+        <!-- ========================= visi-misistart ========================= -->
+        <section id="contact" class="visi-misicta-bg img-bg pt-110 pb-100" style="background-color: #1f1f1f">
+            <div class="container">
+                <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="section-title mb-60">
-                            <h2 class="text-white wow fadeInUp text-center" data-wow-delay=".4s">Visi</h2>
-                            <p class="text-white wow fadeInUp" data-wow-delay=".6s">
-                                Terwujudnnya warga sekolah yang beriman dan bertakwa, berprestasi, berkarakter dan peduli lingkungan
-                            </p>
+                            <div class="d-flex justify-content-center">
+                                <h2 class="text-white wow fadeInUp text-center" data-wow-delay=".4s">Visi</h2>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="text-white wow fadeInUp" data-wow-delay=".6s">
+                                    Terwujudnnya warga sekolah yang beriman dan bertakwa, berprestasi, berkarakter dan peduli lingkungan
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
@@ -167,10 +202,13 @@
 
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        
+                        <img src="img/perpus.jpg" alt="" class="w-100">
                     </div>
                     <div class="col-lg-6 col-md-12">
-
+                        <div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.859829877331!2d113.80874667500632!3d-7.909708092113548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6dd0c96063627%3A0x240fbcf5b19e18d0!2sSD%20Negeri%20Kotakulon%203%20Bondowoso!5e0!3m2!1sen!2sid!4v1716122875191!5m2!1sen!2sid"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 75%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>

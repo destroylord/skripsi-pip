@@ -6,7 +6,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="./img/skotga-logo.png">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>UPTD Sekolah Dasar Kotakulon 3 Bondowoso</title>
+        <title>UPTD SPF SDN Kotalulon 3 Bondowoso</title>
 
 		<!-- ========================= CSS here ========================= -->
 		<link rel="stylesheet" href="front/assets/css/bootstrap-5.0.0-beta1.min.css">
