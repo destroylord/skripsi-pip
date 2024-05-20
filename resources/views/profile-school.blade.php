@@ -6,10 +6,10 @@
             <div class="row shadow-md d-flex justify-content-center">
                 <div class="col-lg-10 mx-auto my-auto ">
                     <div class="card">
+                        <img src="img/perpus.jpg" class="w-100" alt="">
                         <div class="card-body">
-                            <img src="{{ asset('img/skotga-logo.png') }}" class="w-100" alt="">
                             <h3 class="mb-4">Profil UPTD SFP SDN Kotakulon 3 Bondowoso</h3>
-                            <b class="mb-4">Visi</b>
+                            <b class="mb-4 pt-100">Visi</b>
                             <p>
                                 Terwujudnnya warga sekolah yang beriman dan bertakwa, berprestasi, berkarakter dan peduli lingkungan
                             </p>
@@ -23,6 +23,7 @@
                                     6. Membudayakan hidup bersih dan sehat, serta peduli lingkungan melalui kegiatan pembiasaan sehari-hari. <br>
                             </p>
                             <b class="mb-4">Struktur Organisasi</b>
+                            <img src="img/struktur-sd.png" class="w-100" alt="">
                         </div>
                     </div>
                 </div>

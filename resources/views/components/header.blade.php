@@ -21,17 +21,17 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="javascript:void(0)">Home</a>
+                                        <a class="page-scroll" href="/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="javascript:void(0)">Profile</a>
+                                        <a class="page-scroll" href="/profile-sekolah">Profile</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="javascript:void(0)">Fasilitas</a>
+                                        <a class="page-scroll" href="/fasilitas-sekolah">Fasilitas</a>
                                     </li>
-                                     <li class="nav-item">
+                                     {{-- <li class="nav-item">
                                         <a class="page-scroll" href="javascript:void(0)">Karya</a>
-                                    </li>
+                                    </li> --}}
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#kontak">Kontak</a>
                                     </li>
