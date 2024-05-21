@@ -1,7 +1,7 @@
 @extends('templates.app')
 
 @section('content')
-    <section class="profile pt-200">
+    <section class="profile pt-200 pb-100">
         <div class="container">
             <div class="row shadow-md d-flex justify-content-center">
                 <div class="col-lg-10 mx-auto my-auto ">

@@ -46,14 +46,14 @@
             <x-input-error :messages="$errors->get('asal_tk')" class="mt-2" />
         </div>
         <div class="col-md-6 mt-3">
-            <label for="kindergarten_address" class="form-label">Alamat TK</label>
-            <textarea name="kindergarten_address" id="" placeholder="Tulis alamat lengkap" cols="30" rows="3" class="form-control">{{ old('kindergarten_address') }}</textarea>
-            <x-input-error :messages="$errors->get('kindergarten_address')" class="mt-2" />
-        </div>
-        <div class="col-md-6 mt-3">
             <label for="address" class="form-label">Alamat Siswa</label>
             <textarea class="form-control" id="address" rows="3" placeholder="Tulis alamat lengkap sesuai KK" name="home_address">{{ old('home_address') }}</textarea>
             <x-input-error :messages="$errors->get('home_address')" class="mt-2" />
+        </div>
+        <div class="col-md-6 mt-3">
+            <label for="kindergarten_address" class="form-label">Alamat TK</label>
+            <textarea name="kindergarten_address" id="" placeholder="Tulis alamat lengkap" cols="30" rows="3" class="form-control">{{ old('kindergarten_address') }}</textarea>
+            <x-input-error :messages="$errors->get('kindergarten_address')" class="mt-2" />
         </div>
         <div class="col-md-6 mt-3">
             <label for="distance" class="form-label">Jarak Tempuh*</label>

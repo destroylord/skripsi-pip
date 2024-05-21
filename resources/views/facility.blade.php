@@ -38,7 +38,7 @@ display: none;
 @endpush
 
 @section('content')
-    <section class="facility pt-200">
+    <section class="facility pt-200 pb-100">
 
      <section class="container">
         <div class="row">
