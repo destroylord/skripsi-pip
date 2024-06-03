@@ -37,33 +37,38 @@
                                         <th>Tanggal Lahir</th>
                                         <th>Agama</th>
                                         <th>Asal Sekolah</th>
-                                        <th>Alamat Sekolah</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    @foreach(\App\Models\Student::all() as $student)
+                                    <tr>
+                                        <td>{{ $student->full_name }}</td>
+                                        <td>{{ $student->gender }}</td>
+                                        <td>{{ $student->birth_place }}</td>
+                                        <td>{{ $student->birth_date }}</td>
+                                        <td>{{ $student->religion }}</td>
+                                        <td>{{ $student->kindergarten }}</td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
                             </table>
                         </div>
-                        <script type="text/javascript">
-                            $(function() {
-                                $('#table1').DataTable({
-                                    "processing": true,
-                                    "serverSide": true,
-                                    "ajax": "{{ url('api/get-student') }}",
-                                    "columns": [
-                                        { "data": "full_name" },
-                                        { "data": "gender" },
-                                        { "data": "birth_place" },
-                                        { "data": "birth_date" },
-                                        { "data": "religion" },
-                                        { "data": "kindergarten" },
-                                        { "data": "kindergarten_address" }
-                                    ]
-                                });
-                            });
-                        </script>
                     </div>
                 </div>
 
             </section>
         </div>
     </div>
+
+    @push('styles')
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
+    @endpush
+    @push('scripts')
+        <script src="//cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#table1').DataTable();
+            } );
+        </script>
+    @endpush
 </x-app-layout>

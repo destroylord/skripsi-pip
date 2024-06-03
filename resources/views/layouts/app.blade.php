@@ -18,6 +18,7 @@
     <meta name="description" content="" />
 
     @include('layouts.partials.style')
+    @stack('styles')
   </head>
 
   <body>
