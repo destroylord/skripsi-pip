@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="row">      
-        <div class="col-lg-3 col-md-12 col-3 mb-4">
+        <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
             <div class="card">
             <div class="card-body">
                 <div class="card-title d-flex align-items-start justify-content-between">
