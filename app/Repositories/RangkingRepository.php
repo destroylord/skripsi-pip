@@ -21,8 +21,7 @@ class RangkingRepository
             $s->result = $s->rangkings->sum();
         });
 
-        $alternative->students = $alternative->students->sortByDesc('result');
-        
+        $alternative->students = $alternative->students->sortBy('result')->values();
 
         return (object) ['criterias' => $alternative->criterias, 'students' => $alternative->students];
     }

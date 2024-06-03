@@ -12,7 +12,7 @@
             <tr>
                 <td>{{ $student->full_name }}</td>
                 @foreach ($student->alternatives as $alternaitve)
-                    <th>{{ $alternaitve->value }}</th>
+                    <th>{{ $alternaitve->sum('value') }}</th>
                 @endforeach
             </tr>
         @endforeach

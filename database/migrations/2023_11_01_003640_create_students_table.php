@@ -19,16 +19,16 @@ return new class extends Migration
             $table->date('birth_date');
             $table->string('religion', 100);
             $table->string('kindergarten');
-            $table->text('kindergarten_address');
+            $table->text('kindergarten_address')->nullable();
             $table->text('home_address');
             $table->string('father_name');
-            $table->text('father_address');
-            $table->string('father_birth_place');
-            $table->date('father_birth_date');
+            $table->text('father_address')->nullable();
+            $table->string('father_birth_place')->nullable();
+            $table->date('father_birth_date')->nullable();
             $table->string('mother_name');
-            $table->text('mother_address');
-            $table->string('mother_birth_place');
-            $table->date('mother_birth_date');
+            $table->text('mother_address')->nullable();
+            $table->string('mother_birth_place')->nullable();
+            $table->date('mother_birth_date')->nullable();
 
             $table->string('birth_certificate')->nullable(); // fotokopi akta kelahiran
             $table->string('family_card')->nullable(); //fotokopi kartu keluarga

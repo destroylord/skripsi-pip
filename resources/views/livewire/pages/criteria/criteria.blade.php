@@ -48,9 +48,6 @@ $submit = function () {
     $this->type = '';
 };
 
-// On Form Edit
-
-
 // On Delete
 $deleteCriteria = function (Criteria $criteria) {
     $criteria->delete();

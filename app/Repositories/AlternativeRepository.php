@@ -37,7 +37,7 @@ class AlternativeRepository
 
         $student->map(function ($s) use ($criteria) {
            $s->alternatives = $criteria->map(function ($c) use ($s) {
-               return Alternative::where('student_id', $s->id)->where('criteria_id', $c->id)->first();
+               return Alternative::where('student_id', $s->id)->where('criteria_id', $c->id)->get();
            });
            return $s;
         });
