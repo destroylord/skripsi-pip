@@ -29,7 +29,6 @@ return new class extends Migration
             $table->text('mother_address')->nullable();
             $table->string('mother_birth_place')->nullable();
             $table->date('mother_birth_date')->nullable();
-
             $table->string('birth_certificate')->nullable(); // fotokopi akta kelahiran
             $table->string('family_card')->nullable(); //fotokopi kartu keluarga
             $table->string('kindergarten_certificate')->nullable(); //fotokopi ijazah tk (jika ada)'); 

@@ -29,6 +29,10 @@ $updateSubCriteria = function($id) {
     $this->dispatch('show-modal');
 };
 
+
+$deleteSubCriteria = function (SubCriteria $subCriteria) {
+    $subCriteria->delete();
+};
  
 on(['reset-form' => function () {
     $this->form->reset();
@@ -74,7 +78,7 @@ on(['reset-form' => function () {
                                             <td>{{ $subCriteria->value }}</td>
                                             <td>
                                                 <a href="#" class="btn btn-sm btn-warning" wire:click="updateSubCriteria({{ $subCriteria->id }})"><i class='bx bxs-edit' ></i></a>
-                                                <a href="#" class="btn btn-sm btn-danger"><i class='bx bxs-trash' ></i> </a>
+                                                <a href="#" class="btn btn-sm btn-danger" wire:click="deleteSubCriteria({{ $subCriteria->id }})"><i class='bx bxs-trash' ></i> </a>
                                             </td>
                                         </tr>
                                         @endforeach

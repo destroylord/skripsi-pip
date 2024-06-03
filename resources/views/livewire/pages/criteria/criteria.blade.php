@@ -1,18 +1,13 @@
 <?php
 
-use function Livewire\Volt\{state, layout, computed, rules, title};
+use function Livewire\Volt\{state, layout, computed, rules, title, form};
+use App\Livewire\Forms\CriteriaForm;
 use App\Models\Criteria;
 
 layout('layouts.app');
+form(CriteriaForm::class);
 title('Kriteria');
 
-
-state([
-    'name' => '',
-    'score' => '',
-    'weight' => '',
-    'type' => ''
-]);
 
 state([
     'total_score' => Criteria::sum('score'),
@@ -22,36 +17,30 @@ state([
 // For Foreach
 $criterias = computed(fn() => Criteria::all());
 
-// Validation
-rules([
-    'name' => 'required|min:3',
-    'score' => 'required',
-    'type' => 'required'
-]);
-
 // On Create
-$submit = function () {
-    $this->validate();
+$saveCriteria = function () {
+    $this->form->save();
+    $this->form->reset();
 
-    $score = $this->score;
-    
-    Criteria::create([
-        'name' => $this->name,
-        'score' => $score,
-        'weight' => $score / 100,
-        'type' => $this->type
-    ]);
+    $this->dispatch('criteria-saved');
+};
 
-    // After Create input null
-    $this->name = '';
-    $this->score = '';
-    $this->type = '';
+$updateCriteria = function ($id) {
+    $criteria = Criteria::find($id);
+     
+    $this->form->setCriteria($criteria);
+
 };
 
 // On Delete
 $deleteCriteria = function (Criteria $criteria) {
     $criteria->delete();
-}
+};
+
+on(['reset-form' => function () {
+    $this->form->reset();
+    $this->resetValidation();
+}]);
     
 ?>
 
@@ -69,13 +58,13 @@ $deleteCriteria = function (Criteria $criteria) {
                     </p>
                 </div>
                 <div class="col-md-12">
-                    <form action="#" wire:submit="submit" method="POST" autocomplete="off">
+                    <form action="#" method="POST" autocomplete="off">
                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
                                 <label for="first-name">Nama Kriteria</label>
                             </div>
                             <div class="col-lg-10 col-9">
-                                <input type="text" class="form-control" wire:model="name" placeholder="Contoh: Pekerjaan Orang tua">
+                                <input type="text" class="form-control" wire:model="form.name" placeholder="Contoh: Pekerjaan Orang tua">
                                 @error('name')
                                     <span>{{ $message }}</span>
                                 @enderror
@@ -86,7 +75,7 @@ $deleteCriteria = function (Criteria $criteria) {
                                 <label for="last-name">Nilai</label>
                             </div>
                             <div class="col-lg-3 col-9">
-                                <input type="number" class="form-control" wire:model="score" placeholder="Contoh: 10">
+                                <input type="number" class="form-control" wire:model="form.score" placeholder="Contoh: 10">
                                 @error('score')
                                     <span>{{ $message }}</span>
                                 @enderror
@@ -98,7 +87,7 @@ $deleteCriteria = function (Criteria $criteria) {
                                 <label for="last-name">Tipe</label>
                             </div>
                             <div class="col-lg-3 col-9">
-                                <select name="type" wire:model="type" class="form-control" id="">
+                                <select name="type" wire:model="form.type" class="form-control" id="">
                                     <option value="" selected disabled>Pilih</option>
                                     <option value="Benefit">Benefit</option>
                                     <option value="Cost">Cost</option>
@@ -111,7 +100,7 @@ $deleteCriteria = function (Criteria $criteria) {
                         
                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
-                                <button class="btn btn-primary" {{ ($total_score >= 100) ? 'disabled' : '' }}>Submit</button>
+                                <button class="btn btn-primary" wire:click="saveCriteria" {{ ($total_score >= 100) ? 'disabled' : '' }}>Submit</button>
                             </div>
                         </div>
                     </form>
@@ -158,7 +147,7 @@ $deleteCriteria = function (Criteria $criteria) {
                                   
                                     <button 
                                         class="btn btn-warning mr-2"
-                                        wire:click="updatedCriteria({{ $criteria->id }})"
+                                        wire:click="updateCriteria({{ $criteria->id }})"
                                         type="button"> <i class='bx bxs-edit' ></i>Edit</a>
                                     <button
                                         class="btn btn-danger"

@@ -32,11 +32,11 @@
             <label for="religion" class="form-label">Agama</label>
             <select class="form-select" name="religion">
                 <option selected disabled>Pilih sesuai keyakinan</option>
-                <option value="1" {{ old('religion') == '1' ? 'selected' : '' }}>Islam</option>
-                <option value="2" {{ old('religion') == '2' ? 'selected' : '' }}>Khatolik</option>
-                <option value="3" {{ old('religion') == '3' ? 'selected' : '' }}>Hindu</option>
-                <option value="4" {{ old('religion') == '4' ? 'selected' : '' }}>Budha</option>
-                <option value="5" {{ old('religion') == '5' ? 'selected' : '' }}>Konghucu</option>
+                <option value="1" {{ old('religion') == 'islam' ? 'selected' : '' }}>Islam</option>
+                <option value="2" {{ old('religion') == 'khatolik' ? 'selected' : '' }}>Khatolik</option>
+                <option value="3" {{ old('religion') == 'hindu' ? 'selected' : '' }}>Hindu</option>
+                <option value="4" {{ old('religion') == 'budha' ? 'selected' : '' }}>Budha</option>
+                <option value="5" {{ old('religion') == 'konghucu' ? 'selected' : '' }}>Konghucu</option>
             </select>
             <x-input-error :messages="$errors->get('religion')" class="mt-2" />
         </div>

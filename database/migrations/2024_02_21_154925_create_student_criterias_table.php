@@ -15,8 +15,16 @@ return new class extends Migration
             $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('subcriteria_id');
 
-            $table->foreign('student_id')->references('id')->on('students');
-            $table->foreign('subcriteria_id')->references('id')->on('subcriterias');
+            $table->foreign('student_id')
+                ->references('id')
+                ->on('students')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+            $table->foreign('subcriteria_id')
+                ->references('id')
+                ->on('subcriterias')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 
