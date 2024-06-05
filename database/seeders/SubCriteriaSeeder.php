@@ -13,35 +13,48 @@ class SubCriteriaSeeder extends Seeder
      */
     public function run(): void
     {
-        Subcriteria::insert([
+        $subCriteria = $this->getSubCriteriaData();
+        foreach ($subCriteria as $data) {
+            Subcriteria::create($data);
+        }
+    }
+
+    private function getSubCriteriaData(): array
+    {
+        return [
             [
                 'parent_id' => 1, 
-                'name' => 'Rp.0 - Rp. 500.000', 
+                'name' => 'Tidak Berpenghasilan', 
+                'value' => 6
+            ],
+            [
+                'parent_id' => 1, 
+                'name' => '< Rp.500.000', 
                 'value' => 5
             ],
             [
                 'parent_id' => 1, 
-                'name' => 'Rp. 1.000.000', 
+                'name' => '500.000 - 999.999', 
                 'value' => 4
             ],
             [
                 'parent_id' => 1, 
-                'name' => 'Rp. 2.000.000', 
+                'name' => '1.000.000 - 1.999.999', 
                 'value' => 3
             ],
             [
                 'parent_id' => 1, 
-                'name' => 'Rp. 3.000.000', 
+                'name' => '2.000.000 - 4.999.999', 
                 'value' => 2
             ],
             [
                 'parent_id' => 1, 
-                'name' => '> Rp. 4.000.000', 
+                'name' => '> 5000.000', 
                 'value' => 1
             ],
             [
                 'parent_id' => 2, 
-                'name' => '0- 1km', 
+                'name' => '<1km', 
                 'value' => 1
             ],
             [
@@ -51,37 +64,23 @@ class SubCriteriaSeeder extends Seeder
             ],
             [
                 'parent_id' => 2, 
-                'name' => '3km', 
+                'name' => '>2km', 
                 'value' => 3
             ],
-            [
-                'parent_id' => 2, 
-                'name' => '4km', 
-                'value' => 4
-            ],
-            [
-                'parent_id' => 2, 
-                'name' => '>5km', 
-                'value' => 5
-            ],
+            
             [
                 'parent_id' => 3, 
                 'name' => 'Tidak Bekerja', 
-                'value' => 6
+                'value' => 5
             ],
             [
                 'parent_id' => 3, 
                 'name' => 'Petani', 
-                'value' => 5
-            ],
-            [
-                'parent_id' => 3, 
-                'name' => 'Buruh Haria Lepas', 
                 'value' => 4
             ],
             [
                 'parent_id' => 3, 
-                'name' => 'Sopir', 
+                'name' => 'Buruh', 
                 'value' => 3
             ],
             [
@@ -91,9 +90,79 @@ class SubCriteriaSeeder extends Seeder
             ],
             [
                 'parent_id' => 3, 
-                'name' => 'TNI/Polri/ASN', 
+                'name' => 'Karyawan Swasta', 
                 'value' => 1
             ],
-        ]);
+            [
+                'parent_id' => 3, 
+                'name' => 'PNS/TNI/Polri', 
+                'value' => 0
+            ],
+            [
+                'parent_id' => 4,
+                'name' => "Ya",
+                'value' => 4 
+            ],
+            [
+                'parent_id' => 4,
+                'name' => "Tidak",
+                'value' => 1
+            ],
+            [
+                'parent_id' => 5,
+                'name' => "Jalan Kaki",
+                'value' => 1 
+            ],
+            [
+                'parent_id' => 5,
+                'name' => "Sepeda pancat",
+                'value' => 2
+            ],
+            [
+                'parent_id' => 5,
+                'name' => "Becak",
+                'value' => 3
+            ],
+            [
+                'parent_id' => 5,
+                'name' => "Sepeda Motor",
+                'value' => 4
+            ],
+            [
+                'parent_id' => 6,
+                'name' => "1",
+                'value' => 7 
+            ],
+            [
+                'parent_id' => 6,
+                'name' => "2",
+                'value' => 6
+            ],
+            [
+                'parent_id' => 6,
+                'name' => "3",
+                'value' => 5
+            ],
+            [
+                'parent_id' => 6,
+                'name' => "4",
+                'value' => 4
+            ],
+            [
+                'parent_id' => 6,
+                'name' => "5",
+                'value' => 3
+            ],
+            [
+                'parent_id' => 6,
+                'name' => "6",
+                'value' => 2
+            ],
+            [
+                'parent_id' => 6,
+                'name' => "7",
+                'value' => 1
+            ],
+        ];
     }
 }

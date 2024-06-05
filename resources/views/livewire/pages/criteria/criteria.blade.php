@@ -1,6 +1,6 @@
 <?php
 
-use function Livewire\Volt\{state, layout, computed, rules, title, form};
+use function Livewire\Volt\{state, layout, computed, rules, title, form, on};
 use App\Livewire\Forms\CriteriaForm;
 use App\Models\Criteria;
 
@@ -37,10 +37,10 @@ $deleteCriteria = function (Criteria $criteria) {
     $criteria->delete();
 };
 
-on(['reset-form' => function () {
-    $this->form->reset();
-    $this->resetValidation();
-}]);
+// on('reset-form', function () {
+//     $this->form->reset();
+//     $this->resetValidation();
+// });
     
 ?>
 
@@ -48,7 +48,7 @@ on(['reset-form' => function () {
   <div class="col-md-6">
     <div class="card mb-4">
         <div class="card-header">
-            <h4 class="card-title">Form Kriteria</h4>
+            <h4 class="cardw-title">Form Kriteria</h4>
         </div>
 
         <div class="card-body">
@@ -58,7 +58,7 @@ on(['reset-form' => function () {
                     </p>
                 </div>
                 <div class="col-md-12">
-                    <form action="#" method="POST" autocomplete="off">
+                    <form action="#" method="POST" class="form" autocomplete="off">
                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
                                 <label for="first-name">Nama Kriteria</label>
@@ -100,7 +100,7 @@ on(['reset-form' => function () {
                         
                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
-                                <button class="btn btn-primary" wire:click="saveCriteria" {{ ($total_score >= 100) ? 'disabled' : '' }}>Submit</button>
+                                <button class="btn btn-primary" id="btn-save" wire:click="saveCriteria" >Submit</button>
                             </div>
                         </div>
                     </form>
@@ -147,6 +147,7 @@ on(['reset-form' => function () {
                                   
                                     <button 
                                         class="btn btn-warning mr-2"
+                                        id="btn-edit"
                                         wire:click="updateCriteria({{ $criteria->id }})"
                                         type="button"> <i class='bx bxs-edit' ></i>Edit</a>
                                     <button
@@ -174,4 +175,15 @@ on(['reset-form' => function () {
         </div>
     </div>
   </div>
+
+  @push('scripts')
+      <script>
+        // $('.form').submit(function(e) {
+        //     Livewire.dispatch('reset-form');
+        // })
+        Livewire.on('btn-edit', () => {
+            Livewire.emit('btn-save');
+        })
+      </script>
+  @endpush
 </div>

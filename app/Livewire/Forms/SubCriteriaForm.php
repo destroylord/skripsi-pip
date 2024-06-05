@@ -15,7 +15,7 @@ class SubCriteriaForm extends Form
 
     #[Rule('required')]
     public $name;
-    #[Rule('required')]
+    #[Rule('required|unique:subcriterias,value')]
     public $value;
 
     public $subCriteria = null;

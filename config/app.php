@@ -183,6 +183,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Yaml' => 'Symfony\\Component\\Yaml\\Yaml'
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 

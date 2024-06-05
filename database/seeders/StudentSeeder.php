@@ -8,6 +8,7 @@ use App\Models\Subcriteria;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use File;
+use Symfony\Component\Yaml\Yaml;
 
 class StudentSeeder extends Seeder
 {
@@ -17,11 +18,12 @@ class StudentSeeder extends Seeder
     public function run(): void
     {
          $studentJson = File::get("database/data/students.json");
-         $alternativeJson = File::get("database/data/alternative.json");
+         $alternativeYaml = __DIR__ . '/../../database/data/alternative.yaml';
+         $yaml = new Yaml();
 
          $students = json_decode($studentJson);
-         $alternatives = json_decode($alternativeJson);
-
+         $alternatives = $yaml->parseFile($alternativeYaml);
+        dd($alternatives);
             foreach ($students as $student) {
                 $student = Student::create([
                     'full_name' => $student->full_name,
@@ -43,14 +45,15 @@ class StudentSeeder extends Seeder
 
                     
                 foreach ($alternatives[$student->id-1] as $alternative) {
-                   foreach (get_object_vars($alternative) as $key => $value) {
-                        Alternative::create([
-                            'student_id' => $student->id,
-                            'criteria_id' => $key,
-                            'value' => $value,
-                            'created_at' => now(),
-                            'updated_at' => now(),
-                        ]);
+                    
+                        foreach ( $alternative as $key => $value) {
+                            Alternative::create([
+                                'student_id' => $student->id,
+                                'criteria_id' => $key,
+                                'value' => $value,
+                                'created_at' => now(),
+                                'updated_at' => now(),
+                            ]);
 
                         $subCriteria = Subcriteria::where( 'parent_id', $key)
                                         ->where('value', $value)->first();
