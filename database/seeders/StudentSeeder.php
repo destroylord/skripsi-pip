@@ -23,7 +23,13 @@ class StudentSeeder extends Seeder
 
          $students = json_decode($studentJson);
          $alternatives = $yaml->parseFile($alternativeYaml);
-        dd($alternatives);
+
+        //  $studentJson = File::get("database/data/students.json");
+        //  $alternativeJson = File::get("database/data/alternative.json");
+
+        //  $students = json_decode($studentJson);
+        //  $alternatives = json_decode($alternativeJson);
+
             foreach ($students as $student) {
                 $student = Student::create([
                     'full_name' => $student->full_name,
@@ -45,8 +51,10 @@ class StudentSeeder extends Seeder
 
                     
                 foreach ($alternatives[$student->id-1] as $alternative) {
+                    $arrayAlternative = $alternatives[$student->id-1];
+
                     
-                        foreach ( $alternative as $key => $value) {
+                        foreach ($arrayAlternative as $key => $value) {
                             Alternative::create([
                                 'student_id' => $student->id,
                                 'criteria_id' => $key,
@@ -60,7 +68,7 @@ class StudentSeeder extends Seeder
 
                         \DB::table('student_criterias')->insert([
                             'student_id' => $student->id,
-                            'subcriteria_id' => $subCriteria->id ?? null,
+                            'subcriteria_id' => $alternative ?? null,
                         ]);
                     }
                 }
