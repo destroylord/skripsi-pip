@@ -24,145 +24,150 @@ class SubCriteriaSeeder extends Seeder
         return [
             [
                 'parent_id' => 1, 
-                'name' => 'Tidak Berpenghasilan', 
-                'value' => 6
-            ],
-            [
-                'parent_id' => 1, 
-                'name' => '< Rp.500.000', 
-                'value' => 5
+                'name' => '0 - 499.999', 
+                'value' => 2
             ],
             [
                 'parent_id' => 1, 
                 'name' => '500.000 - 999.999', 
-                'value' => 4
+                'value' => 3
             ],
             [
                 'parent_id' => 1, 
                 'name' => '1.000.000 - 1.999.999', 
-                'value' => 3
+                'value' => 4
             ],
             [
                 'parent_id' => 1, 
-                'name' => '2.000.000 - 4.999.999', 
-                'value' => 2
+                'name' => '> 2.000.000', 
+                'value' => 5
             ],
             [
-                'parent_id' => 1, 
-                'name' => '> 5000.000', 
-                'value' => 1
+                'parent_id' => 2,
+                'name' => 'Tidak Bekerja / Petani / Buruh',
+                'value' => 5
             ],
             [
-                'parent_id' => 2, 
-                'name' => '<1km', 
-                'value' => 1
+                'parent_id' => 2,
+                'name' => 'Wiraswasta',
+                'value' => 4
             ],
             [
-                'parent_id' => 2, 
-                'name' => '2km', 
-                'value' => 2
-            ],
-            [
-                'parent_id' => 2, 
-                'name' => '>2km', 
+                'parent_id' => 2,
+                'name' => 'Karyawan Swasta',
                 'value' => 3
+            ],
+            [
+                'parent_id' => 2,
+                'name' => 'PNS/TNI/Polri',
+                'value' => 2
+            ],
+            [
+                'parent_id' => 3, 
+                'name' => '0 - 499.999', 
+                'value' => 2
+            ],
+            [
+                'parent_id' => 3, 
+                'name' => '500.000 - 999.999', 
+                'value' => 3
+            ],
+            [
+                'parent_id' => 3, 
+                'name' => '1.000.000 - 1.999.999', 
+                'value' => 4
+            ],
+            [
+                'parent_id' => 3, 
+                'name' => '> 2.000.000', 
+                'value' => 5
+            ],
+            [
+                'parent_id' => 4,
+                'name' => 'Tidak Bekerja / Petani / Buruh',
+                'value' => 5
+            ],
+            [
+                'parent_id' => 4,
+                'name' => 'Wiraswasta',
+                'value' => 4
+            ],
+            [
+                'parent_id' => 4,
+                'name' => 'Karyawan Swasta',
+                'value' => 3
+            ],
+            [
+                'parent_id' => 4,
+                'name' => 'PNS/TNI/Polri',
+                'value' => 2
+            ],
+            [
+                'parent_id' => 5,
+                'name' => '< 1 km',
+                'value' => 3
+            ],
+            [
+                'parent_id' => 5,
+                'name' => '2 km',
+                'value' => 4
+            ],
+            [
+                'parent_id' => 5,
+                'name' => '> 2 km',
+                'value' => 5
+            ],
+            [
+                'parent_id' => 6,
+                'name' => 'Ya',
+                'value' => 1
+            ],
+            [
+                'parent_id' => 6,
+                'name' => 'Tidak',
+                'value' => 5
+            ],
+            [
+                'parent_id' => 7,
+                'name' => 'Jalan Kaki',
+                'value' => 5
+            ],
+            [
+                'parent_id' => 7,
+                'name' => 'Becak',
+                'value' => 4
+            ],
+            [
+                'parent_id' => 7,
+                'name' => 'Sepeda pancal',
+                'value' => 3
+            ],
+            [
+                'parent_id' => 7,
+                'name' => 'Sepeda Motor',
+                'value' => 2
+            ],
+            [
+                'parent_id' => 8,
+                'name' => 'Siswa Miskin/Rentan Miskin',
+                'value' => 5
+            ],
+            [
+                'parent_id' => 8,
+                'name' => 'Yatim Piatu/Panti Asuhan/Panti Sosial',
+                'value' => 4
+            ],
+            [
+                'parent_id' => 8,
+                'name' => 'Pemegang PKH/KPS/KKS',
+                'value' => 3
+            ],
+            [
+                'parent_id' => 8,
+                'name' => 'Sudah Mampu',
+                'value' => 2
             ],
             
-            [
-                'parent_id' => 3, 
-                'name' => 'Tidak Bekerja', 
-                'value' => 5
-            ],
-            [
-                'parent_id' => 3, 
-                'name' => 'Petani', 
-                'value' => 4
-            ],
-            [
-                'parent_id' => 3, 
-                'name' => 'Buruh', 
-                'value' => 3
-            ],
-            [
-                'parent_id' => 3, 
-                'name' => 'Wiraswasta', 
-                'value' => 2
-            ],
-            [
-                'parent_id' => 3, 
-                'name' => 'Karyawan Swasta', 
-                'value' => 1
-            ],
-            [
-                'parent_id' => 3, 
-                'name' => 'PNS/TNI/Polri', 
-                'value' => 0
-            ],
-            [
-                'parent_id' => 4,
-                'name' => "Ya",
-                'value' => 4 
-            ],
-            [
-                'parent_id' => 4,
-                'name' => "Tidak",
-                'value' => 1
-            ],
-            [
-                'parent_id' => 5,
-                'name' => "Jalan Kaki",
-                'value' => 1 
-            ],
-            [
-                'parent_id' => 5,
-                'name' => "Sepeda pancat",
-                'value' => 2
-            ],
-            [
-                'parent_id' => 5,
-                'name' => "Becak",
-                'value' => 3
-            ],
-            [
-                'parent_id' => 5,
-                'name' => "Sepeda Motor",
-                'value' => 4
-            ],
-            [
-                'parent_id' => 6,
-                'name' => "1",
-                'value' => 7 
-            ],
-            [
-                'parent_id' => 6,
-                'name' => "2",
-                'value' => 6
-            ],
-            [
-                'parent_id' => 6,
-                'name' => "3",
-                'value' => 5
-            ],
-            [
-                'parent_id' => 6,
-                'name' => "4",
-                'value' => 4
-            ],
-            [
-                'parent_id' => 6,
-                'name' => "5",
-                'value' => 3
-            ],
-            [
-                'parent_id' => 6,
-                'name' => "6",
-                'value' => 2
-            ],
-            [
-                'parent_id' => 6,
-                'name' => "7",
-                'value' => 1
-            ],
         ];
     }
 }

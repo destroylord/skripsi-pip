@@ -36,11 +36,6 @@ $updateCriteria = function ($id) {
 $deleteCriteria = function (Criteria $criteria) {
     $criteria->delete();
 };
-
-// on('reset-form', function () {
-//     $this->form->reset();
-//     $this->resetValidation();
-// });
     
 ?>
 
@@ -58,7 +53,7 @@ $deleteCriteria = function (Criteria $criteria) {
                     </p>
                 </div>
                 <div class="col-md-12">
-                    <form action="#" method="POST" class="form" autocomplete="off">
+                    <form wire:submit.prevent="saveCriteria" method="POST" class="form" autocomplete="off">
                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
                                 <label for="first-name">Nama Kriteria</label>
@@ -100,7 +95,7 @@ $deleteCriteria = function (Criteria $criteria) {
                         
                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
-                                <button class="btn btn-primary" id="btn-save" wire:click="saveCriteria" >Submit</button>
+                                <button class="btn btn-primary" id="btn-save" @disabled($this->criterias->sum('score') >= 100) wire:click="saveCriteria" >Submit</button>
                             </div>
                         </div>
                     </form>

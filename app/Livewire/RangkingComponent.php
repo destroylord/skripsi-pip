@@ -11,7 +11,8 @@ class RangkingComponent extends Component
 {
 
     
-    public $query;
+    public $criterias;
+    public $students;
 
     public function mount(
         RangkingRepository $rangkingRepository, 
@@ -19,11 +20,14 @@ class RangkingComponent extends Component
         AlternativeRepository $AlternativeRepository, )
     {
 
-
-        $this->query = $rangkingRepository->getCalculation(
+        $result = $rangkingRepository->getCalculation(
             $normalizationRepository->getCalculation($AlternativeRepository->index()),
         );
+
+        $this->criterias = $result->criterias;
+        $this->students = $rangkingRepository->getRangked($result->students);
     
+
     }
 
     public function render()

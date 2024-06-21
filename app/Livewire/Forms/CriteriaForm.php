@@ -8,14 +8,19 @@ use Livewire\Form;
 
 class CriteriaForm extends Form
 {
+    #[Rule('required')]
     public $name;
+    #[Rule('required')]
     public $score;
+    #[Rule('required')]
     public $type;
 
 
     public $criteria = null;
     public function setCriteria($criteria)
     {
+
+        $this->criteria = $criteria;
         $this->name = $criteria->name;
         $this->score = $criteria->score;
         $this->type = $criteria->type;
@@ -27,18 +32,22 @@ class CriteriaForm extends Form
         $this->validate();
 
         if ($this->criteria != null) {
+
             $this->criteria->update([
                 'name' => $this->name,
                 'score' => $this->score,
-                'type' => $this->type / 100
+                'weight' => $this->score / 100,
+                'type' => $this->type 
             ]);
+
             return;
         }
 
         Criteria::create([
             'name' => $this->name,
             'score' => $this->score,
-            'type' => $this->type / 100
+            'weight' => $this->score / 100,
+            'type' => $this->type 
         ]);
     }
 }

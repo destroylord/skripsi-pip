@@ -13,14 +13,14 @@ class NormalizationRepository
         foreach ($alternative->criterias as $key => $criteria) {
             
             $values = $alternative->students->map(function ($s) use ($key) {
-                return $s->alternatives[$key]->sum('value');
+                return $s->alternatives[$key]->first()->value;
             })->toArray();
 
             $alternative->students->map(function ($s) use ($key, $values, $criteria) {
 
                 $s->normalizations->push( $criteria->type == "Benefit" ? 
-                    ($s->alternatives[$key]->sum('value') ) / max($values) :
-                    (min($values) / $s->alternatives[$key]->sum('value') ));
+                    ($s->alternatives[$key]->first()->value) / max($values) :
+                    (min($values) / $s->alternatives[$key]->first()->value));
                     
             });
             

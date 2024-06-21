@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('full_name');
             $table->enum('gender', ['L', 'P']);
+            $table->enum('type', ['tampil', 'sembunyi']);
             $table->string('birth_place');
             $table->date('birth_date');
             $table->string('religion', 100);

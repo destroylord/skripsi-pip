@@ -8,7 +8,6 @@ class RangkingRepository
     {
         $alternative->students->map( fn ($s) => $s->rangkings = collect());
 
-  
         $alternative->criterias->map(function ($c, $i) use ($alternative) {
             $alternative->students->map(function ($s) use ($c, $i) {
                 $s->rangkings->push(
@@ -24,5 +23,30 @@ class RangkingRepository
         $alternative->students = $alternative->students->sortBy('result')->values();
 
         return (object) ['criterias' => $alternative->criterias, 'students' => $alternative->students];
+    }
+
+    public function getRangked($students)
+    {
+        $sorted = $students->sortByDesc('result')->values();
+
+        // Inisialisasi ranking dan nilai sebelumnya
+        $ranking = 1;
+        $previousNilai = null;
+        $ranked = collect();
+        $skip = 0;
+
+        foreach ($sorted as $index => $item) {
+            if ($previousNilai !== $item['result']) {
+                $ranking = $index + 1 - $skip;
+                $previousNilai = $item['result'];
+            } else {
+                $skip++;
+            }
+            $item['ranking'] = $ranking;
+            $ranked->push($item);
+        }
+
+        return $ranked;
+
     }
 }

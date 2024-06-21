@@ -34,6 +34,7 @@ class StudentSeeder extends Seeder
                 $student = Student::create([
                     'full_name' => $student->full_name,
                     'gender' => $student->gender,
+                    'type' => $student->type,
                     'birth_place' => $student->birth_place,
                     'birth_date' => $student->birth_date,
                     'religion' => $student->religion,
@@ -51,10 +52,9 @@ class StudentSeeder extends Seeder
 
                     
                 foreach ($alternatives[$student->id-1] as $alternative) {
-                    $arrayAlternative = $alternatives[$student->id-1];
-
-                    
-                        foreach ($arrayAlternative as $key => $value) {
+                        
+                        foreach ($alternative as $key => $value) {
+                            
                             Alternative::create([
                                 'student_id' => $student->id,
                                 'criteria_id' => $key,
@@ -63,12 +63,20 @@ class StudentSeeder extends Seeder
                                 'updated_at' => now(),
                             ]);
 
-                        $subCriteria = Subcriteria::where( 'parent_id', $key)
-                                        ->where('value', $value)->first();
+                        $subCriteria = Subcriteria::where('parent_id', $key)
+                                                 ->where('value', $value)
+                                                 ->first();
+
+                        if (!$subCriteria) {
+                            
+                            dump($key . ' - ' . $value);
+                        }
+
+                        $subCriteriaId = $subCriteria ? $subCriteria->id : null;
 
                         \DB::table('student_criterias')->insert([
                             'student_id' => $student->id,
-                            'subcriteria_id' => $alternative ?? null,
+                            'subcriteria_id' => $subCriteriaId,
                         ]);
                     }
                 }

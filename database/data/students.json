@@ -8,7 +8,8 @@
         "home_address": "JL. DIPONEGORO",
         "father_name": "MULYADI",
         "mother_name": "TURSININGSIH",
-        "kindergarten": "TK PELITA HARAPAN III"
+        "kindergarten": "TK PELITA HARAPAN III",
+        "type": "sembunyi"
     },
     {
         "full_name": "ABDUS SAMAD",
@@ -19,7 +20,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "WIWIN WIJAYA",
         "mother_name": "SUMIYATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "ACHMAD ARIA DWI PUTRA",
@@ -30,7 +32,8 @@
         "home_address": "JL MASTRIP KEMBANG RT 029/ RW 010",
         "father_name": "",
         "mother_name": "DWI TRISNA LESTARI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ADELIA INNEIZ SYAFIINA",
@@ -41,7 +44,8 @@
         "home_address": "Dusun Bringin",
         "father_name": "M IMAM SYAFI'I",
         "mother_name": "CICI INDAH VARIA PERMUNI SUCI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ADI RAHMAT SUBAHRI",
@@ -52,7 +56,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "SAIFUL BAHRI",
         "mother_name": "SRI IDAHARINI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ADIFA AZKA RUMAYZA",
@@ -63,7 +68,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "AGUS SALIM",
         "mother_name": "RUMIATI",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "ADINDA DWI NURWAHIDAH",
@@ -74,7 +80,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "ABDUL WAHID",
         "mother_name": "NURUL FADILAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "AHMAD SYARIF HIDAYATULLOH",
@@ -85,7 +92,8 @@
         "home_address": "JL. DIPONEGORO",
         "father_name": "NURYONO",
         "mother_name": "ITA WIDIYANTI",
-        "kindergarten": "TK PELITA HARAPAN III"
+        "kindergarten": "TK PELITA HARAPAN III",
+        "type": "sembunyi"
     },
     {
         "full_name": "AINUL YAQIIN PUTRA IRAWAN",
@@ -96,7 +104,8 @@
         "home_address": "Jln Saliwiryo Pranowo",
         "father_name": "IRAWAN",
         "mother_name": "DESI MAULINA",
-        "kindergarten": "TK CEMPAKA"
+        "kindergarten": "TK CEMPAKA",
+        "type": "tampil"
     },
     {
         "full_name": "AISYAH NUR RIZKI",
@@ -107,7 +116,8 @@
         "home_address": "SALIWIRYO PRANOWO",
         "father_name": "ANDHI YUDHA SOFIAN BUDI PRAYUGO",
         "mother_name": "INDRI PERMATASARI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ALFIAN RAMADHAN",
@@ -118,7 +128,8 @@
         "home_address": "JL. LETNAN RANTAM",
         "father_name": "PRI HERI NASUTION",
         "mother_name": "ROFIKA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ALIF FAJAR SYAHPUTRA",
@@ -129,7 +140,8 @@
         "home_address": "JL. DIPONEGORO GG.6 NO.55",
         "father_name": "MARYANTO",
         "mother_name": "NENENG GUSTANTI",
-        "kindergarten": "TKS AL MAWADDAH"
+        "kindergarten": "TKS AL MAWADDAH",
+        "type": "sembunyi"
     },
     {
         "full_name": "ALIF WIJAYA",
@@ -140,7 +152,8 @@
         "home_address": "JL. SALIWIRYO PRANOWO",
         "father_name": "MOHAMMAD KHOIRUL KAKIM",
         "mother_name": "MARYATI",
-        "kindergarten": "TKS AL MAWADDAH"
+        "kindergarten": "TKS AL MAWADDAH",
+        "type": "sembunyi"
     },
     {
         "full_name": "ALVIANO DWI BINTANG PAMUNGKAS",
@@ -151,7 +164,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "KARYONO",
         "mother_name": "SAODA FITRIANI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ALYSSA AZZAHRA HUMAIRAH RAKHMAN",
@@ -162,7 +176,8 @@
         "home_address": "JL. DIPONEGORO",
         "father_name": "SIDIQ FATHOR RAKHMAN",
         "mother_name": "SAM SOFIAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ANA HUMAIRA",
@@ -173,7 +188,8 @@
         "home_address": "PONCOGATI",
         "father_name": "SUTIK BASUKI",
         "mother_name": "NUR FADILAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ANGGA EKA RAMADHANI",
@@ -184,7 +200,8 @@
         "home_address": "SALIWIRYO PRANOWO GG. TOPO",
         "father_name": "SLAMET",
         "mother_name": "RUKMIATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ARKA VAI SANJAYA",
@@ -195,7 +212,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "",
         "mother_name": "DWI TRISNA LESTARI",
-        "kindergarten": "TKS AL MAWADDAH"
+        "kindergarten": "TKS AL MAWADDAH",
+        "type": "sembunyi"
     },
     {
         "full_name": "ASSHIFA MIA AGUSTIN",
@@ -206,7 +224,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "",
         "mother_name": "RUMIATI",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "AULIA NUR FAIZAH",
@@ -217,7 +236,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "ACHMAD FAIRUZI",
         "mother_name": "IKAYATUS SA'DIYAH",
-        "kindergarten": "TKS MUSLIM PANCASILA 1"
+        "kindergarten": "TKS MUSLIM PANCASILA 1",
+        "type": "sembunyi"
     },
     {
         "full_name": "AULYA SRI WULANDARI",
@@ -228,7 +248,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "SALEHUDDIN",
         "mother_name": "SRIWATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "AURELIA ANINDITA NURSYAKILA",
@@ -239,7 +260,8 @@
         "home_address": "PONCOGATI",
         "father_name": "BAMBANG HERMANTO",
         "mother_name": "IRMAWATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "AZRIEL ADITYA SYAFI'I",
@@ -250,7 +272,8 @@
         "home_address": "DSN TAMAN",
         "father_name": "M. IMAM SYAFI'I",
         "mother_name": "CICI INDAH VARIA PERMUNI SUCI",
-        "kindergarten": "TK AL IHSAN"
+        "kindergarten": "TK AL IHSAN",
+        "type": "sembunyi"
     },
     {
         "full_name": "AZZAHRA NAYSILA RAHMA",
@@ -261,7 +284,8 @@
         "home_address": "JL. DIPONEGORO GANG MALABAR",
         "father_name": "EDI SUBANDRI",
         "mother_name": "SITI HIGMAWATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "BAGAS FAKHRY ABDILLAH",
@@ -272,7 +296,8 @@
         "home_address": "JL. DIPONEGORO",
         "father_name": "SIFA'UL ULUM",
         "mother_name": "EKA BUDI AGUSTIN",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "BASTIAR HERIZ BINTAMA",
@@ -283,7 +308,8 @@
         "home_address": "JL. DIPONEGORO GG. MALABAR",
         "father_name": "HERU EFENDI BAHTIAR",
         "mother_name": "RIZKA RUBIYANTI NURFADILLAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "BILAL DWI HENDRIYANTO",
@@ -294,7 +320,8 @@
         "home_address": "JL. BRIGJEN KATAMSO",
         "father_name": "HENDRA SUMARYONO",
         "mother_name": "TUTIK NURRAHMANI",
-        "kindergarten": "TKS AL MAWADDAH"
+        "kindergarten": "TKS AL MAWADDAH",
+        "type": "tampil"
     },
     {
         "full_name": "BILI INDISTIRA PRATAMA",
@@ -305,7 +332,8 @@
         "home_address": "DIPONEGORO GG. MALABAR",
         "father_name": "SUYITNO",
         "mother_name": "SINDI ATMANEGARI",
-        "kindergarten": "TK AL MAWADDAH"
+        "kindergarten": "TK AL MAWADDAH",
+        "type": "tampil"
     },
     {
         "full_name": "BILQIS AQILA AZ-ZAHRA",
@@ -316,7 +344,8 @@
         "home_address": "JETIS",
         "father_name": "EDI HARTONO",
         "mother_name": "ERLINA AVERIA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "BILQIS SURYA ATTIA ANWAR",
@@ -327,18 +356,8 @@
         "home_address": "ASRAMA LAMA 514",
         "father_name": "ANWAR TAUFIK",
         "mother_name": "YAYUK PONSRIADA",
-        "kindergarten": "TKS KARTIKA - IX- 37"
-    },
-    {
-        "full_name": "BINTANG JUANG RAKABUMI",
-        "gender": "L",
-        "birth_place": "BONDOWOSO",
-        "birth_date": "2015-06-04",
-        "religion": "Islam",
-        "home_address": "DUSUN TAMAN",
-        "father_name": "ZAINOL ARIFIN",
-        "mother_name": "KAMILIA",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS KARTIKA - IX- 37",
+        "type": "sembunyi"
     },
     {
         "full_name": "BONDAN AL FATHUR RAMADHAN",
@@ -349,7 +368,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "APRI DARMAWAN",
         "mother_name": "DINA AGUSTIN",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "DAVIAN ZIEGIE RESTUZAIDAN",
@@ -360,7 +380,8 @@
         "home_address": "Jalan Diponegoro GG Malabar",
         "father_name": "UNTUNG SUWITO",
         "mother_name": "SUMIARSIH",
-        "kindergarten": "TK PELITA HARAPAN III"
+        "kindergarten": "TK PELITA HARAPAN III",
+        "type": "tampil"
     },
     {
         "full_name": "DHENIS RAHMATULLAH",
@@ -371,7 +392,8 @@
         "home_address": "JALAN LETNAN RANTAM",
         "father_name": "BAMBANG SUGIANTO",
         "mother_name": "SUPRIYATIN",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "DIANDRA RADITYA ALFARIZZY",
@@ -382,7 +404,8 @@
         "home_address": "JL. SALIWIRYO Gg. PATTIYAN",
         "father_name": "DUDDY VIRGA DARMAWANG",
         "mother_name": "YUNI SRI WAHYUNINGSIH",
-        "kindergarten": "TKS KARTIKA - IX- 37"
+        "kindergarten": "TKS KARTIKA - IX- 37",
+        "type": "sembunyi"
     },
     {
         "full_name": "DIMAS ADITIYAH",
@@ -393,7 +416,8 @@
         "home_address": "PASAREJO",
         "father_name": "ADE PERMADI",
         "mother_name": "MISWARINI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "EGY MILGIAN",
@@ -404,7 +428,8 @@
         "home_address": "Jl. Diponegoro",
         "father_name": "mulyono",
         "mother_name": "Suhartini",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "ELOK WARDATUL KHOLIDIYAH",
@@ -415,7 +440,8 @@
         "home_address": "TAMAN",
         "father_name": "MOHAMMAD SALEH",
         "mother_name": "IIN ROFIKOH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "FADHIAH NUR EFENDI",
@@ -426,7 +452,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "FENDI SISWANTO",
         "mother_name": "JAMILA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "FAEYZA ALFA RIZQI",
@@ -437,7 +464,8 @@
         "home_address": "JL.DIPONEGORO",
         "father_name": "DARSONO",
         "mother_name": "FADILAH",
-        "kindergarten": "TK PELITA HARAPAN III"
+        "kindergarten": "TK PELITA HARAPAN III",
+        "type": "sembunyi"
     },
     {
         "full_name": "FAHRI OKTAVIO RIFKI PRADANA",
@@ -448,7 +476,8 @@
         "home_address": "JALAN SALIWIRYO PRANOWO GG. TOPO",
         "father_name": "SYAIFUL ANAM",
         "mother_name": "MARTINI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "FAIDIL FIKRI RAMADHAN",
@@ -459,7 +488,8 @@
         "home_address": "JALAN DIPONEGORO RT 22 RW 07",
         "father_name": "BAGUS HERINDRA LAKSANA",
         "mother_name": "RENI APRILIA SARI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "FAIZAH DIANA PUTRI",
@@ -470,7 +500,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "IMAM SUGIANTO",
         "mother_name": "SUGIANTI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "Farzana Ghina Batrisya",
@@ -481,7 +512,8 @@
         "home_address": "Kalitapen",
         "father_name": "Teguh Raharjo",
         "mother_name": "Ika Lisanday",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "GAVIN BASKARA WISNU KENCANA PUTRA",
@@ -492,7 +524,8 @@
         "home_address": "Jl. Kopral Moerin",
         "father_name": "SAIFUL GANTAR",
         "mother_name": "VERONICHA RIZKI NORMALA DEWI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "HESTI SILLA WARDANI",
@@ -503,7 +536,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "AHMAD HASIM",
         "mother_name": "SANTI WIDYAWATI",
-        "kindergarten": "TK AL MAWADDAH"
+        "kindergarten": "TK AL MAWADDAH",
+        "type": "tampil"
     },
     {
         "full_name": "HIDAYAH RAHMATULLAH",
@@ -514,7 +548,8 @@
         "home_address": 0,
         "father_name": "DJAMALUDIN",
         "mother_name": "SADIYA",
-        "kindergarten": "TK AL MAWADDAH"
+        "kindergarten": "TK AL MAWADDAH",
+        "type": "sembunyi"
     },
     {
         "full_name": "HOLIFATUL HOLIFI ISWANTO",
@@ -525,7 +560,8 @@
         "home_address": "JALAN SALIWIRYO PRANOWO 32",
         "father_name": "JUMAT ISWANTO",
         "mother_name": "NURUL RAKHMAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "HUMAIRAH AZZAINIYAH RAMADANI",
@@ -536,7 +572,8 @@
         "home_address": "SALIWIRYO PRANOWO",
         "father_name": "",
         "mother_name": "NURUL FADILAH",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "HUZAIMAH",
@@ -547,7 +584,8 @@
         "home_address": "JL. SALIWIRYO PRANOMO",
         "father_name": "",
         "mother_name": "SUPRIYATI",
-        "kindergarten": "TKS MUSLIM PANCASILA 1"
+        "kindergarten": "TKS MUSLIM PANCASILA 1",
+        "type": "sembunyi"
     },
     {
         "full_name": "IDA KURNIAWATI",
@@ -558,7 +596,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "WAGEANTO",
         "mother_name": "MISYATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "IZZA AFKARINA",
@@ -569,7 +608,8 @@
         "home_address": "SALIWIRYO PRANOMO",
         "father_name": "",
         "mother_name": "MUSLIHA",
-        "kindergarten": "TKS MUSLIM PANCASILA 1"
+        "kindergarten": "TKS MUSLIM PANCASILA 1",
+        "type": "sembunyi"
     },
     {
         "full_name": "JAGAD BHIRAWA ANORAGA SANJAYA",
@@ -580,7 +620,8 @@
         "home_address": "BANGSREN",
         "father_name": "DIMAS NOER HANSANJAYA",
         "mother_name": "ROHMANI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "KATRINA ARSYA KHUMAIRAH",
@@ -591,7 +632,8 @@
         "home_address": "JL. DIPONEGORO",
         "father_name": "APRI DARMAWAN",
         "mother_name": "DINA AGUSTIN",
-        "kindergarten": "TK PELITA HARAPAN III"
+        "kindergarten": "TK PELITA HARAPAN III",
+        "type": "sembunyi"
     },
     {
         "full_name": "KENZIA AMEERA KUSUMA PUTRI",
@@ -602,7 +644,8 @@
         "home_address": "JL SALIWIRYO PRANOWO",
         "father_name": "HENDRIYANTO",
         "mother_name": "YANUAR EKA KUSUMA RINI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "KEVIN AGUNG PRAKOSO",
@@ -613,7 +656,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "ANDI PURWANTO",
         "mother_name": "NOVITA MAYOLIKA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "KHOFIFAH AMALIA WULANDARI",
@@ -624,7 +668,8 @@
         "home_address": "PONCOGATI",
         "father_name": "MUHAMMAD JAUHARI",
         "mother_name": "NUVIYANA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "MARETA AMELIA AZZAHRA",
@@ -635,7 +680,8 @@
         "home_address": "LETNAN RANTAM",
         "father_name": "DEDI SURYANA",
         "mother_name": "NURUL SITI FATIMAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "MARYAM ANNISA NUR AINI",
@@ -646,7 +692,8 @@
         "home_address": "JL. SALIWIRYO PRANOWO",
         "father_name": "SAFIUDIN",
         "mother_name": "SENIWATININGSIH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MAULIDIYA HANA WARDATUN WAFIROH",
@@ -657,7 +704,8 @@
         "home_address": "Besuki",
         "father_name": "",
         "mother_name": "Sunyani",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MOCHAMMAD HAFIS",
@@ -668,7 +716,8 @@
         "home_address": "BRIGJEN KATAMSO",
         "father_name": "HENDRO PURNOMO",
         "mother_name": "ERNA NINGSIH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MOCHAMMAD ISMAIL MUBAROQ",
@@ -679,7 +728,8 @@
         "home_address": "JALAN DIPONEGORO GG MALABAR",
         "father_name": "MARHAWI",
         "mother_name": "MISWATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MOCHAMMAD KHAIRIL IMAM CAHYA",
@@ -690,7 +740,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "ISMAIL",
         "mother_name": "FARIDA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "MOCHAMMAD RIFKI SETIAWAN",
@@ -701,7 +752,8 @@
         "home_address": "PONCOGATI",
         "father_name": "KURYADI",
         "mother_name": "TITIK AMSIROWATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MOHAMAD PANJI CHANDRA SAPUTRA",
@@ -712,7 +764,8 @@
         "home_address": "JALAN BRIGJEN KATAMSO",
         "father_name": "ADNAN SAPUTRA",
         "mother_name": "ROSDIANA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "Mohammad Kian Ardiansyah",
@@ -723,7 +776,8 @@
         "home_address": "Diponogoro",
         "father_name": "Abdul Kholik",
         "mother_name": "Yulia Kriswanti",
-        "kindergarten": "TK ABA"
+        "kindergarten": "TK ABA",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD AKBAR MUHLISIN",
@@ -734,7 +788,8 @@
         "home_address": "PONCOGATI",
         "father_name": "HADI PRAMONO",
         "mother_name": "HATIJA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "MUHAMMAD ALFI ALGODZALI",
@@ -745,7 +800,8 @@
         "home_address": "JL DIPONEGORO",
         "father_name": "ABDUL JALI",
         "mother_name": "VILA KURNIAWATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD ALI FATHAN MUBINA",
@@ -756,7 +812,8 @@
         "home_address": "JL. DIPONEGORO GG. 6",
         "father_name": "MULYONO",
         "mother_name": "SRI KUSTINI",
-        "kindergarten": "KB AL - IHSAN"
+        "kindergarten": "KB AL - IHSAN",
+        "type": "sembunyi"
     },
     {
         "full_name": "MUHAMMAD DAMAR JUNUR RAMADHAN",
@@ -767,7 +824,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "JUNAIDI",
         "mother_name": "ATIM NURFADILAH",
-        "kindergarten": "TK BHAKTI"
+        "kindergarten": "TK BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "MUHAMMAD DIMAS FEBRIAN",
@@ -778,7 +836,8 @@
         "home_address": "DESA PONCOGATI",
         "father_name": "MUHAMMAD JAUHARI EFENDI",
         "mother_name": "NUVIYANA",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD FEBRIAN",
@@ -789,7 +848,8 @@
         "home_address": "JL. DIPONEGORO",
         "father_name": "",
         "mother_name": "SANEMA",
-        "kindergarten": "TK. PELITA HARAPAN III"
+        "kindergarten": "TK. PELITA HARAPAN III",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD GIO PRATAMA",
@@ -800,7 +860,8 @@
         "home_address": "JALAN DIPONEGORO GG MALABAR",
         "father_name": "ALEK SANDER",
         "mother_name": "SUHAMA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD HABIB ARZACHEL",
@@ -811,7 +872,8 @@
         "home_address": "BELAKANG PRM. ANGKASA PURA LINGK. KALANGANYAR",
         "father_name": "FADILAH EVENDI",
         "mother_name": "RIZKY AMLIA YULIANI FLORENTY",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "MUHAMMAD IKHSAN",
@@ -822,7 +884,8 @@
         "home_address": "JALAN BRIGJEN KATAMSO",
         "father_name": "ANDY KRISTANTO",
         "mother_name": "FIFIN APRIYANI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD ILZAM FAROBI",
@@ -833,7 +896,8 @@
         "home_address": "TAMAN",
         "father_name": "EDI YANTO",
         "mother_name": "MUTMAINNAH",
-        "kindergarten": "TK BHAKTI"
+        "kindergarten": "TK BHAKTI",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD MUZAMMIL",
@@ -844,7 +908,8 @@
         "home_address": "JL.CURAHDAMI",
         "father_name": "SIDDIK",
         "mother_name": "DAWANA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD RAJAK",
@@ -855,7 +920,8 @@
         "home_address": "SALIWIRYO PRANOWO",
         "father_name": "AHMAD BUDI RAJANA",
         "mother_name": "MEI NOVI",
-        "kindergarten": "TK AL MAWADDAH"
+        "kindergarten": "TK AL MAWADDAH",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD RISKI",
@@ -866,7 +932,8 @@
         "home_address": "JALAN SALIWIRYO PRANOWO",
         "father_name": "IMAM SALI ARIFIN",
         "mother_name": "YUSI KUSTANTINIAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "MUHAMMAD SURYA ARIF SAPUTRA",
@@ -877,7 +944,8 @@
         "home_address": "JL. MT HARYONO",
         "father_name": "SYAMSUL ARIFIN",
         "mother_name": "SURYANA",
-        "kindergarten": "KB. SIRAJUDIN"
+        "kindergarten": "KB. SIRAJUDIN",
+        "type": "tampil"
     },
     {
         "full_name": "MUHAMMAD SYAIFIL ULA",
@@ -888,7 +956,8 @@
         "home_address": "SALIWIRYO PRANOWO",
         "father_name": "IRWANTO",
         "mother_name": "UMMI KULSUM",
-        "kindergarten": "TK BHAKTI"
+        "kindergarten": "TK BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "MUHAMMAD WILDAN TAUFIK",
@@ -899,7 +968,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "SUGIONO",
         "mother_name": "INDRI SRI MULYANI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "NABILA MASRURO",
@@ -910,7 +980,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "MUNIR",
         "mother_name": "MARYATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "NAFISA MAULIDYA ZAHRANTI",
@@ -921,7 +992,8 @@
         "home_address": "BRIGJEN KATAMSO",
         "father_name": "AGUS HARIYANTO",
         "mother_name": "JUHAIRIYAH",
-        "kindergarten": "TK AL MAWADDAH"
+        "kindergarten": "TK AL MAWADDAH",
+        "type": "sembunyi"
     },
     {
         "full_name": "NAYLA FITRI  SALSABILA",
@@ -932,7 +1004,8 @@
         "home_address": "JL. SALIWIRYO PRANOWO",
         "father_name": "AHMAD MUNDIR",
         "mother_name": "ERNAWATI",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "NUR FATIMAH KHOIRUNNISAK",
@@ -943,7 +1016,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "SUGIANTO",
         "mother_name": "ANA KUSTINA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "PARAMITA WAHYU LARASATI",
@@ -954,7 +1028,8 @@
         "home_address": "JL. BRIGJEN KATAMSO NO.26",
         "father_name": "ROZAQNA TABAH PINUJI WAHYU",
         "mother_name": "NUR JANNAH",
-        "kindergarten": "TKS AL MAWADDAH"
+        "kindergarten": "TKS AL MAWADDAH",
+        "type": "sembunyi"
     },
     {
         "full_name": "PASYA KAMILA RAMADHANI",
@@ -965,7 +1040,8 @@
         "home_address": "JLN. BRIGJEN KATAMSO",
         "father_name": "",
         "mother_name": "DESI ARIANDINI",
-        "kindergarten": "KB. SIRAJUDDIN, BONDOWOSO"
+        "kindergarten": "KB. SIRAJUDDIN, BONDOWOSO",
+        "type": "tampil"
     },
     {
         "full_name": "PRABHU APPRILLEO RAGIEL DHARMAWAN",
@@ -976,7 +1052,8 @@
         "home_address": "JL. DIPONEGORO GG. MALABAR",
         "father_name": "WAGIONO SOEHARTONO",
         "mother_name": "AROSIDA",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "PUTRI DWI AMINATUZ ZAHRO",
@@ -987,7 +1064,8 @@
         "home_address": "JALAN DIPONEGORO",
         "father_name": "M. HOLIL",
         "mother_name": "ROSIDAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "RAHMANIAH",
@@ -998,7 +1076,8 @@
         "home_address": "DESA MENGOK",
         "father_name": "",
         "mother_name": "ULFIYAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "RAIZA AMALITUS ZAHRO",
@@ -1009,7 +1088,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "",
         "mother_name": "YANTI",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "sembunyi"
     },
     {
         "full_name": "RANIA PUTRI DAMAYANTI",
@@ -1020,7 +1100,8 @@
         "home_address": "DUSUN TAMAN PONCOGATI",
         "father_name": "MAHMUDI",
         "mother_name": "ALIFAH YANTI",
-        "kindergarten": "TKS KARTIKA - IX- 37"
+        "kindergarten": "TKS KARTIKA - IX- 37",
+        "type": "sembunyi"
     },
     {
         "full_name": "RASYA ALFINO AZMI",
@@ -1031,7 +1112,8 @@
         "home_address": "BRIGPOL SUDARLAN",
         "father_name": "ANIS SAYUTI",
         "mother_name": "RIFA ATUN HASANAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "RISQI NOER JANNAH",
@@ -1042,7 +1124,8 @@
         "home_address": "PONCOGATI",
         "father_name": "",
         "mother_name": "HATIJA",
-        "kindergarten": "KB AL - IHSAN"
+        "kindergarten": "KB AL - IHSAN",
+        "type": "sembunyi"
     },
     {
         "full_name": "ROFI DWI APRILYANTO",
@@ -1053,7 +1136,8 @@
         "home_address": "DIPONEGORO GANG MALABAR",
         "father_name": "DWI PRIYANTO",
         "mother_name": "SATIK RAHMAWATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "SAFINATUN NAJA",
@@ -1064,7 +1148,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "",
         "mother_name": "YUS ROH",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "tampil"
     },
     {
         "full_name": "SHAFI BUDI HANDZALAH",
@@ -1075,7 +1160,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "IMAM BUDI HARTONO",
         "mother_name": "SUMIATI",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "SITI AISYAH BILQIS NUR JANNAH",
@@ -1086,7 +1172,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "ANIS HENDRAWAN",
         "mother_name": "SETIAWATI",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "tampil"
     },
     {
         "full_name": "SITI DWI MAHARANI",
@@ -1097,10 +1184,11 @@
         "home_address": "PONCOGATI",
         "father_name": "HARTONO",
         "mother_name": "RUMYATI",
-        "kindergarten": "TKS BHAKTI"
+        "kindergarten": "TKS BHAKTI",
+        "type": "tampil"
     },
     {
-        "full_name": "Sitti Khoirun Nisa",
+        "full_name": "SITI KHOIRUN NISA",
         "gender": "P",
         "birth_place": "Mangupura",
         "birth_date": "2013-01-02",
@@ -1108,7 +1196,8 @@
         "home_address": "o",
         "father_name": "Moh Usman",
         "mother_name": "Adi Fitri Wulan Dari",
-        "kindergarten": "TK ABA"
+        "kindergarten": "TK ABA",
+        "type": "sembunyi"
     },
     {
         "full_name": "SITTI SOLEHATUS SA'DIYAH",
@@ -1119,7 +1208,8 @@
         "home_address": "DIPONEGORO",
         "father_name": "AMINULLAH",
         "mother_name": "ASTUTIK",
-        "kindergarten": "TK PGRI 8"
+        "kindergarten": "TK PGRI 8",
+        "type": "sembunyi"
     },
     {
         "full_name": "SODIKKIN",
@@ -1130,7 +1220,8 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "HURI",
         "mother_name": "SANIMA",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "SYAFILA DIANA SHAPUTRI",
@@ -1141,7 +1232,8 @@
         "home_address": "JALAN SALIWIRYO PRANOWO",
         "father_name": "SYAFIUDIN",
         "mother_name": "SRIYATUN",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     },
     {
         "full_name": "ULYA NUR NAFISA",
@@ -1152,7 +1244,20 @@
         "home_address": "DUSUN TAMAN",
         "father_name": "HURI",
         "mother_name": "SANIMA",
-        "kindergarten": "TKS PGRI 08 BONDOWOSO"
+        "kindergarten": "TKS PGRI 08 BONDOWOSO",
+        "type": "tampil"
+    },
+    {
+        "full_name": "YOGA PANCA SAPUTRA",
+        "gender": "L",
+        "birth_place": "Blitar",
+        "birth_date": "2012-11-26",
+        "religion": "islam",
+        "home_address": "JL RAYA",
+        "father_name": "PURWO BUDI RIWAYATNO",
+        "mother_name": "SITI AMINAH",
+        "kindergarten": "",
+        "type": "tampil"
     },
     {
         "full_name": "ZAHRO KHAIRUNNISA",
@@ -1163,6 +1268,7 @@
         "home_address": "KARANG TENGAH",
         "father_name": "MUHAMMAD HALIL",
         "mother_name": "MUNIFAH",
-        "kindergarten": ""
+        "kindergarten": "",
+        "type": "sembunyi"
     }
 ]

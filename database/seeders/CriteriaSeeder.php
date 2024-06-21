@@ -15,41 +15,53 @@ class CriteriaSeeder extends Seeder
     {
         Criteria::insert([
             [
-                'name' => 'Penghasilan Orang Tua',
+                'name' => 'Penghasilan Ayah',
                 'score' => 25,
                 'weight' => '0.25',
                 'type' => 'Cost'
             ],
             [
-                'name' => 'Jarak Tempuh',
+                'name' => 'Pekerjaan Ayah',
+                'score' => 20,
+                'weight' => '0.2',
+                'type' => 'Benefit'
+            ],
+            [
+                'name' => 'Penghasilan Ibu',
+                'score' => 10,
+                'weight' => '0.1',
+                'type' => 'Cost'
+            ],
+            [
+                'name' => 'Pekerjaan Ibu',
                 'score' => 10,
                 'weight' => '0.1',
                 'type' => 'Benefit'
             ],
             [
-                'name' => 'Pekerjaan Orang Tua',
-                'score' => 10,
-                'weight' => '0.1',
+                'name' => 'Jarak tempuh',
+                'score' => 5,
+                'weight' => '0.05',
                 'type' => 'Cost'
             ],
             [
                 'name' => 'Penerima KPS',
-                'score' => 30,
-                'weight' => '0.3',
+                'score' => 5,
+                'weight' => '0.05',
                 'type' => 'Benefit'
             ],
             [
                 'name' => 'Transportasi',
-                'score' => 10,
-                'weight' => '0.1',
-                'type' => 'Benefit'
-            ],
-            [
-                'name' => 'Anak ke -',
                 'score' => 15,
                 'weight' => '0.15',
                 'type' => 'Cost'
             ],
+            [
+                'name' => 'Alasan Layak PIP',
+                'score' => 10,
+                'weight' => '0.1',
+                'type' => 'Benefit'
+            ]
         ]);
     }
 }

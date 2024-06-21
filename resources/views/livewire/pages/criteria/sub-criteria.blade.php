@@ -32,6 +32,7 @@ $updateSubCriteria = function($id) {
 
 $deleteSubCriteria = function (SubCriteria $subCriteria) {
     $subCriteria->delete();
+    $this->dispatch('subCriteria-deleted');
 };
  
 on(['reset-form' => function () {
@@ -160,6 +161,10 @@ on(['reset-form' => function () {
             Livewire.on('subCriteria-saved', () => {
                 $('#exampleModalCenter').modal('hide');
             });
+            Livewire.on('subCriteria-deleted', () => {
+                alert('Sub Kriteria Terhapus');
+            });
+
         </script>
     @endpush
 </div>

@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
-Route::view('dashboard', 'admin.dashboard')->name('dashboard');
-
+Route::get('/dashboard', DashboardController::class)->name('dashboard');
 
 // Kriteria
 Volt::route('criteria', 'pages.criteria.criteria')->name('criteria.index');
@@ -17,4 +17,7 @@ Volt::route('alternatives', 'pages.calculation.alternatives')->name('alternative
 Volt::route('normalization', 'pages.calculation.normalization')->name('normalization.index');
 
 // Rangking
-Volt::route('rangking', 'pages.calculation.rangking')->name('rangking.index');
+Volt::route('rangking', 'pages.calculation.rangking-layout')->name('rangking.index');
+
+// Result
+Volt::route('result', 'pages.calculation.result')->name('result.index');
