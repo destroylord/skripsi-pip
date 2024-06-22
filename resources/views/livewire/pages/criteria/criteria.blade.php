@@ -95,7 +95,7 @@ $deleteCriteria = function (Criteria $criteria) {
                         
                         <div class="form-group col-form-label row align-items-center">
                             <div class="col-lg-2 col-3">
-                                <button class="btn btn-primary" id="btn-save" @disabled($this->criterias->sum('score') >= 100) wire:click="saveCriteria" >Submit</button>
+                                <button class="btn btn-primary" id="btn-save" wire:click="saveCriteria" >Submit</button>
                             </div>
                         </div>
                     </form>

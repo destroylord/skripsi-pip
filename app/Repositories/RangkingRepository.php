@@ -33,14 +33,11 @@ class RangkingRepository
         $ranking = 1;
         $previousNilai = null;
         $ranked = collect();
-        $skip = 0;
 
         foreach ($sorted as $index => $item) {
             if ($previousNilai !== $item['result']) {
-                $ranking = $index + 1 - $skip;
+                $ranking = $index + 1;
                 $previousNilai = $item['result'];
-            } else {
-                $skip++;
             }
             $item['ranking'] = $ranking;
             $ranked->push($item);
