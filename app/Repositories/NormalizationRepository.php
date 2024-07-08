@@ -13,7 +13,9 @@ class NormalizationRepository
         foreach ($alternative->criterias as $key => $criteria) {
             
             $values = $alternative->students->map(function ($s) use ($key) {
-                return $s->alternatives[$key]->first()->value;
+                // return $s->alternatives[$key]->first()->value;
+                $alternative = $s->alternatives[$key]->first();
+                return $alternative ? $alternative->value : null;
             })->toArray();
 
             $alternative->students->map(function ($s) use ($key, $values, $criteria) {

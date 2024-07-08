@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enum\ActiveEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,7 +13,11 @@ class Criteria extends Model
     protected $tables = 'criterias';
 
     protected $fillable = [
-        'name', 'score', 'weight', 'type'
+        'name', 'score', 'weight', 'type', 'is_active','period_id'
+    ];
+
+    protected $cast = [
+        'is_active' => ActiveEnum::class
     ];
 
     public function subCriterias()

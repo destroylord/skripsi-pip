@@ -38,6 +38,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->name('admin.')
                 ->group(base_path('routes/admin.php'));
 
+             Route::middleware(['auth', 'web'])
+                ->prefix('datatables')
+                ->name('datatables.')
+                ->group(base_path('routes/datatables.php'));
+
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
         });

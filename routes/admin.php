@@ -1,17 +1,19 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Livewire\CriteriaComponent;
+use App\Livewire\MainComponent;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/dashboard', DashboardController::class)->name('dashboard');
 
 // Kriteria
-Volt::route('criteria', 'pages.criteria.criteria')->name('criteria.index');
-Volt::route('sub-create', 'pages.criteria.sub-criteria')->name('sub-criteria');
+// Volt::route('parameter', 'pages.parameter.app')->name('parameter.index');
 
+Route::get('/parameter', MainComponent::class)->name('parameter.index');
 // Alternatives
-Volt::route('alternatives', 'pages.calculation.alternatives')->name('alternatives.index');
+Volt::route('calculation-saw', 'pages.calculation.alternatives')->name('alternatives.index');
 
 // Normalisasi
 Volt::route('normalization', 'pages.calculation.normalization')->name('normalization.index');
@@ -21,3 +23,6 @@ Volt::route('rangking', 'pages.calculation.rangking-layout')->name('rangking.ind
 
 // Result
 Volt::route('result', 'pages.calculation.result')->name('result.index');
+
+// Period
+Volt::route('periode', 'pages.period.index')->name('period.index');
