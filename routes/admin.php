@@ -1,20 +1,27 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
-use App\Livewire\CriteriaComponent;
+use App\Livewire\BlankComponent;
+use App\Livewire\CalculationSawComponent;
 use App\Livewire\MainComponent;
+use App\Livewire\UploadedStudentComponent;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/dashboard', DashboardController::class)->name('dashboard');
 
-// Kriteria
-// Volt::route('parameter', 'pages.parameter.app')->name('parameter.index');
 
 Route::get('/parameter', MainComponent::class)->name('parameter.index');
-// Alternatives
-Volt::route('calculation-saw', 'pages.calculation.alternatives')->name('alternatives.index');
 
+// Alternatives
+// Volt::route('calculation-saw', 'pages.calculation.alternatives')->name('alternatives.index');
+Route::get('/calculation-saw', CalculationSawComponent::class)->name('calculation-saw.index');
+
+Route::get('/uploaded-students', UploadedStudentComponent::class)->name('uploaded-students.index');
+
+
+// Blank
+Route::get('/blank', BlankComponent::class);
 // Normalisasi
 Volt::route('normalization', 'pages.calculation.normalization')->name('normalization.index');
 

@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Period;
 use App\Repositories\AlternativeRepository;
 use App\Repositories\NormalizationRepository;
 use App\Repositories\RangkingRepository;
@@ -13,20 +14,24 @@ class RangkingComponent extends Component
     
     public $criterias;
     public $students;
+    public $period_id = null;
 
     public function mount(
         RangkingRepository $rangkingRepository, 
         NormalizationRepository $normalizationRepository, 
-        AlternativeRepository $AlternativeRepository, )
+        AlternativeRepository $AlternativeRepository,
+        $period    
+    )
+    
     {
 
+        $this->period_id = $period ?? 1;
         $result = $rangkingRepository->getCalculation(
-            $normalizationRepository->getCalculation($AlternativeRepository->index()),
+            $normalizationRepository->getCalculation($AlternativeRepository->index(Period::find($this->period_id))),
         );
 
         $this->criterias = $result->criterias;
         $this->students = $rangkingRepository->getRangked($result->students);
-    
 
     }
 

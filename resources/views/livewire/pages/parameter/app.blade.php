@@ -5,6 +5,7 @@
         <ul class="nav nav-pills mb-3" role="tablist">
             <li class="nav-item">
             <button
+                wire:ignore.self
                 type="button"
                 class="nav-link active"
                 role="tab"
@@ -17,6 +18,7 @@
             </li>
             <li class="nav-item">
             <button
+                wire:ignore.self
                 type="button"
                 class="nav-link"
                 role="tab"
@@ -43,11 +45,11 @@
  </div>
 
   <div class="tab-content">
-    <div class="tab-pane fade show active" id="navs-pills-top-criteria" role="tabpanel">
+    <div class="tab-pane fade show active" id="navs-pills-top-criteria" wire:ignore.self role="tabpanel">
         <livewire:CriteriaComponent :$criterias :$period key="{{ now() }}"/>
     </div>
-     <div class="tab-pane fade" id="navs-pills-top-subcriteria" role="tabpanel">
-        {{-- @livewire('pages.parameter.sub-criteria.index') --}}
+     <div class="tab-pane fade" id="navs-pills-top-subcriteria" wire:ignore.self role="tabpanel">
+        <livewire:SubCriteriaComponent :$subCriterias :$criterias key="{{ now() }}"/>
     </div>
   </div>
 </div>

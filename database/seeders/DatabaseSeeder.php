@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CriteriaSeeder::class,
             SubCriteriaSeeder::class,
-            StudentSeeder::class
+            // StudentSeeder::class
         ]);
     }
 }

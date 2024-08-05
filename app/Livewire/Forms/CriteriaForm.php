@@ -26,9 +26,9 @@ class CriteriaForm extends Form
         return 
             [
                 'name' => 'required|string',
-                'score' => 'required|numeric|min:0',
+                'score' => 'required|numeric|min:0|max:100',
                 'type' => 'required|string',
-                // 'period_id' => 'required|exists:periods,id',
+                'period_id' => 'required|exists:periods,id',
             ];
     }
 
@@ -37,9 +37,10 @@ class CriteriaForm extends Form
         'score.required' => 'The score field is required.',
         'score.numeric' => 'The score must be a number.',
         'score.min' => 'The score must be at least 0.',
+        'score.max' => 'The score must not be greater than 100.',
         'type.required' => 'The type field is required.',
         'period_id.required' => 'The period ID field is required.',
-        // 'period_id.exists' => 'The selected period ID is invalid.',
+        'period_id.exists' => 'The selected period ID is invalid.',
     ];
 
     public function setCriteria(Criteria $criteria)
@@ -65,10 +66,14 @@ class CriteriaForm extends Form
             'period_id' => $this->period_id,
             'is_active' => ActiveEnum::INACTIVE->value,
         ];
+        
 
-        isset($this->criteria) ?
-              $this->criteria->update($data) :
-              $this->criteria = Criteria::create($data);
+        if(isset($this->criteria)) {
+            $data['is_active'] = ActiveEnum::ACTIVE->value;
+            $this->criteria->update($data);
+        } else {
+            $this->criteria = Criteria::create($data);
+        }
 
 
     }

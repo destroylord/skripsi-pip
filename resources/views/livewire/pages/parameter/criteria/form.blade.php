@@ -5,7 +5,12 @@
                 <label for="first-name">Nama Kriteria</label>
             </div>
             <div class="col-lg-10 col-9">
-                <input type="text" class="form-control" wire:model="form.name" placeholder="Contoh: Pekerjaan Orang tua">
+                <select wire:model="form.name" class="form-select" id="">
+                    <option value="" selected disabled>Pilih</option>
+                    @foreach ($selectedValue as $item)
+                        <option value="{{ $item['name'] }}">{{ $item['name'] }}</option>
+                    @endforeach
+                </select>
                 @error('form.name')
                     <span>{{ $message }}</span>
                 @enderror
@@ -20,6 +25,9 @@
                 @error('form.score')
                     <span>{{ $message }}</span>
                 @enderror
+            </div>
+            <div class="col-lg-7">
+                <small>Nilai seluruh kriteria tidak boleh diinputkan lebih dari 100</small>
             </div>
         </div>
 
@@ -41,7 +49,14 @@
         
         <div class="form-group col-form-label row align-items-center">
             <div class="col-lg-2 col-3">
-                <button class="btn btn-primary" id="btn-save" wire:click="saveCriteria" >Submit</button>
+                @if($isEdit == true)
+                    <button class="btn btn-primary" wire:click="saveCriteria">Submit</button>
+                @else
+                    <button class="btn btn-primary" 
+                        id="btn-save"  
+                        wire:click="saveCriteria"
+                        {{ $criterias->sum('score') >= 100 ? 'disabled' : '' }} >Submit</button>
+                @endif
             </div>
         </div>
     </form>

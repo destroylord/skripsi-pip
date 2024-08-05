@@ -11,6 +11,10 @@ class Alternative extends Model
 
     protected $table = 'alternatives';
 
+    protected $fillable = [
+        'student_id', 'criteria_id', 'value'
+    ];
+
     public function student()
     {
         return $this->belongsTo(Student::class);

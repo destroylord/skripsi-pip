@@ -11,4 +11,15 @@ class Period extends Model
 
     protected $fillable = ['name'];
 
+
+    public function criterias() {
+
+        return $this->hasMany(Criteria::class);
+    }
+
+    public function students() {
+
+        return $this->belongsToMany(Student::class, 'period_students');
+    
+    }
 }

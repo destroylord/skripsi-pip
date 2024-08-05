@@ -3,11 +3,9 @@
 namespace App\Livewire;
 
 use App\Livewire\Forms\CriteriaForm;
-use App\Livewire\Forms\CriteriaForm2;
 use App\Services\CriteriaService;
 use Livewire\Component;
 use App\Models\Criteria;
-use App\Models\Period;
 
 class CriteriaComponent extends Component
 {
@@ -20,6 +18,7 @@ class CriteriaComponent extends Component
     protected CriteriaService $criteriaService;
 
     public $criterias;
+    public $isEdit = false;
 
 
     public function mount(CriteriaService $criteriaService, $criterias, $period)
@@ -51,6 +50,7 @@ class CriteriaComponent extends Component
     {        
         $this->form->setCriteria(Criteria::find($id));
         $this->selectedCriteriaId = $id;
+        $this->isEdit = true;
     }
 
     public function deleteCriteria(Criteria $criteria)
@@ -61,6 +61,32 @@ class CriteriaComponent extends Component
 
     public function render()
     {
-        return view('livewire.pages.parameter.criteria.index');
+        return view('livewire.pages.parameter.criteria.index',[
+            'isEdit' => $this->isEdit,
+            'selectedValue' => self::selectedValue()
+        ]);
+    }
+
+    public static function selectedValue(): array
+    {
+        $data = [
+                ['name' => 'Peserta didik dari keluarga yang terdaftar dalam Program Keluarga Harapan (PKH)' ],
+                ['name' => 'Peserta didik dari keluarga pemegang Kartu Keluarga Sejahtera (KKS)' ],
+                ['name' => 'Peserta didik yang berstatus yatim/piatu/yatim piatu dan berasal dari sekolah, panti sosial, atau panti asuhan' ],
+                ['name' => 'Peserta didik yang terdampak bencana alam'],
+                ['name' => 'Peserta didik yang putus sekolah (drop out) dan diharapkan dapat kembali bersekolah'],
+                ['name' => 'Peserta didik yang memiliki kelainan fisik, korban musibah, anak dari orang tua yang terkena pemutusan hubungan kerja, tinggal di daerah konflik, berasal dari keluarga terpidana, berada di Lembaga Pemasyarakatan, atau memiliki lebih dari tiga saudara yang tinggal serumah'],
+                ['name' => 'Peserta didik yang mengikuti kursus atau satuan pendidikan nonformal lainnya'],
+                ['name' => 'Penghasilan Ayah'],
+                ['name' => 'Pekerjaan Ayah'],
+                ['name' => 'Penghasilan Ibu'],
+                ['name' => 'Pekerjaan Ibu'],
+                ['name' => 'Jarak Tempuh'],
+                ['name' => 'Penerima KPS'],
+                ['name' => 'Transportasi'],
+                ['name' => 'Alasan Layak Pip'],
+        ];
+
+        return $data;
     }
 }

@@ -68,7 +68,6 @@ class StudentSeeder extends Seeder
                                                  ->first();
 
                         if (!$subCriteria) {
-                            
                             dump($key . ' - ' . $value);
                         }
 

@@ -3,22 +3,34 @@
 namespace App\Livewire\Forms;
 
 use App\Models\Subcriteria;
-use Livewire\Attributes\Rule;
+use Illuminate\Validation\Rule;
 use Livewire\Form;
 
 
 class SubCriteriaForm extends Form
 {
 
-    #[Rule('required')]
+   
     public $parent_id;
 
-    #[Rule('required')]
     public $name;
-    #[Rule('required')]
     public $value;
 
     public $subCriteria = null;
+
+    public function rules()
+    {
+        return [
+            'parent_id' => 'required',
+            'name' => 'required',
+            'value' => 'required',
+                    Rule::unique('subcriterias')->ignore($this->parent_id)
+        ];
+    }
+
+     protected $messages = [
+        'name.required' => 'The name field is required.',
+    ];
 
     public function setSubcriteria($subCriteria)
     {
@@ -33,20 +45,15 @@ class SubCriteriaForm extends Form
 
         $this->validate();
 
-        if ($this->subCriteria != null) {
-            $this->subCriteria->update([
-                'parent_id' => $this->parent_id,
-                'name' => $this->name,
-                'value' => $this->value
-            ]);
-            return;
-        }
-
-        Subcriteria::create([
+        $data = [
             'parent_id' => $this->parent_id,
             'name' => $this->name,
             'value' => $this->value
-        ]);
+        ];
+
+        isset($this->subCriteria) ?
+            $this->subCriteria->update($data) :
+            $this->subCriteria = Subcriteria::create($data);
     }
 
 }

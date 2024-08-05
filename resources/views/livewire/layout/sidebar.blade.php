@@ -48,17 +48,24 @@ new class extends Component
     <li class="menu-item {{ isActive('admin.parameter.index') || isActive('admin.parameter.index') ? 'active' : '' }}">
       <a href="{{ route('admin.parameter.index') }}" class="menu-link">
         <i class="menu-icon tf-icons bx bxs-tachometer"></i>
-        <div data-i18n="Layouts">Parameter</div>
+        <div data-i18n="Layouts">Kriteria</div>
       </a>
     </li>
 
     <!-- Layouts -->
-    <li class="menu-item {{ isActive('admin.alternatives.index') || isActive('admin.normalization.index') || isActive('admin.rangking.index') ? 'active' : '' }}">
-      <a href="{{ route('admin.alternatives.index') }}" class="menu-link">
+    <li class="menu-item {{ isActive('admin.calculation-saw.index') || isActive('admin.calculation-saw.index') || isActive('admin.rangking.index') ? 'active' : '' }}">
+      <a href="{{ route('admin.calculation-saw.index') }}" class="menu-link">
         <i class="menu-icon tf-icons bx bx-math"></i>
-        <div data-i18n="Layouts">Perhitungan SAW</div>
+        <div data-i18n="Layouts">Penjaringan PIP</div>
       </a>
     </li>
+
+    <!-- Layouts -->
+    <li class="menu-item {{ isActive('admin.uploaded-students.index') ? 'active' : '' }}">
+      <a href="{{ route('admin.uploaded-students.index') }}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-upload"></i>
+        <div data-i18n="Layouts">Upload Siswa</div>
+      </a>
 
     <li class="menu-item {{ isActive('admin.period.index') ? 'active' : '' }}">
       <a href="{{ route('admin.period.index') }}" class="menu-link">

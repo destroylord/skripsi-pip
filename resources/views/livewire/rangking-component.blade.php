@@ -1,4 +1,5 @@
-<table class="table table-bordered table-responsive" id="table-rangking" cellspacing="0">
+<div>
+    <table class="table table-bordered table-responsive" id="table-rangking" cellspacing="0">
     <thead>
         <tr>
             <th>No.</th>
@@ -25,3 +26,11 @@
         @endforeach
     </tbody>
 </table>
+@push('scripts')
+    <script>
+        $(document).ready( function () {  
+            // $('#table-rangking').DataTable();
+        })
+    </script>
+@endpush
+</div>

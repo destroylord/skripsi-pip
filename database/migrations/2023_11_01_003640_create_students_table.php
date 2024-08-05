@@ -14,19 +14,20 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->string('full_name');
+            $table->string('nisn');
             $table->enum('gender', ['L', 'P']);
             $table->enum('type', ['tampil', 'sembunyi']);
-            $table->string('birth_place');
-            $table->date('birth_date');
-            $table->string('religion', 100);
-            $table->string('kindergarten');
+            $table->string('birth_place')->nullable();
+            $table->date('birth_date')->nullable();
+            $table->string('religion', 100)->nullable();
+            $table->string('kindergarten')->nullable();
             $table->text('kindergarten_address')->nullable();
-            $table->text('home_address');
-            $table->string('father_name');
+            $table->text('home_address')->nullable();
+            $table->string('father_name')->nullable();
             $table->text('father_address')->nullable();
             $table->string('father_birth_place')->nullable();
             $table->date('father_birth_date')->nullable();
-            $table->string('mother_name');
+            $table->string('mother_name')->nullable();
             $table->text('mother_address')->nullable();
             $table->string('mother_birth_place')->nullable();
             $table->date('mother_birth_date')->nullable();

@@ -8,47 +8,12 @@ layout('layouts.app');
 form(PeriodForm::class);
 title('Periode');
 
-// Criteria
-
-
-
-// Checkbox
-// $processMark = function(Criteria $criteria) {
-//    $this->form->updateCheckedCriteria($criteria);
-// };
-
-// // On Create
-// $saveCriteria = function () {
-//     $this->form->save();
-//     $this->form->reset([
-//         'name', 'score', 'weight', 'type'
-//     ]);
-
-//     $this->dispatch('criteria-saved');
-//     $this->dispatch('count-update');
-// };
-
-// $updateCriteria = function ($id) {
-//     $criteria = Criteria::find($id);
-     
-//     $this->form->setCriteria($criteria);
-
-// };
-
-// // On Delete
-// $deleteCriteria = function (Criteria $criteria) {
-//     $criteria->delete();
-// };
-
-
-
-// ---
-
 $savePeriod = function() {
    $this->form->save();
    $this->form->reset();
 
    $this->dispatch('period-saved');
+   $this->dispatch('updated-period');
 };
 
 $editPeriod = function($id) {
@@ -56,11 +21,13 @@ $editPeriod = function($id) {
 
     $this->form->setPeriod($period);
     $this->dispatch('show-modal');
+    $this->dispatch('updated-period');
 };
 
 $deletePeriod = function (Period $period) {
     $period->delete();
     $this->dispatch('period-deleted');
+    $this->dispatch('updated-period');
 };
 
 
@@ -74,7 +41,7 @@ $deletePeriod = function (Period $period) {
                 data-bs-toggle="modal" 
                 data-bs-target="#period-modal">+ Tambah Periode</button>
         </div>
-        <div class="card-body">
+        <div class="card-body" wire:ignore>
             <table id="period-table" class="table table-responsive">
                 <thead>
                     <tr>
@@ -113,13 +80,14 @@ $deletePeriod = function (Period $period) {
 
         Livewire.on('period-saved', () => { 
             $('#period-modal').modal('hide');
-            table.destroy();
             table.ajax.reload();
         })
 
         Livewire.on('period-deleted', () => {
             alert('Periode Terhapus');
+            table.ajax.reload();
         })
+
        
     </script>
     @endpush

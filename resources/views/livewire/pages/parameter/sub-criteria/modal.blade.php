@@ -15,11 +15,12 @@
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
-                                <select name="" wire:model="form.parent_id" class="form-select" id="">
+                                <select name="" 
+                                wire:model="form.parent_id" class="form-select" id="">
                                     <option value="">-- Pilih Kriteria --</option>
-                                    {{-- @foreach ($this->criterias as $criteria)
+                                    @foreach ($criterias as $criteria)
                                         <option value="{{ $criteria->id }}">{{ $criteria->name }}</option>
-                                    @endforeach --}}
+                                    @endforeach
                                 </select>
                                     @error('form.parent_id')
                                     <span>{{ $message }}</span>
@@ -39,7 +40,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary ms-1" wire:click="saveSubCriteria">
+                            <button type="button" class="btn btn-primary ms-1" wire:click="save">
                                 <i class="bx bx-check d-block d-sm-none"></i>
                                 <span class="d-none d-sm-block">Simpan</span>
                             </button>

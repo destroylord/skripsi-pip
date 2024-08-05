@@ -23,25 +23,19 @@
 @push('scripts')
 <script>
 
-    $(document).ready( function () {
-            let comparisonDatatable = $('#table-comparison').DataTable();;
+    // $(document).ready( function () {
+    //     let comparisonDatatable = $('#table-comparison').DataTable();;
 
-            $('#table-rangking').DataTable();
-
-            $('#comparison-tab').click(function (){
-                comparisonDatatable.destroy();
-                comparisonDatatable = $('#table-comparison').DataTable();
-            });
-        });
+    //     $('#comparison-tab').click(function (){
+    //         comparisonDatatable.destroy();
+    //     });
+    // });
 
     var options = {
         chart: {
             type: 'donut'
             },
-            series: [
-                    {{ $students->filter(fn($student) => $student->ranking <= 39)->count() }},
-                    {{ $students->filter(fn($student) => $student->ranking > 39)->count() }}
-                ],
+            series: @json($series),
             labels: ['Data yang sama', 'Data yang berbeda'],
             plotOptions: {
                 pie: {
@@ -50,10 +44,13 @@
             }
         }
         
-        
-
     var chart = new ApexCharts(document.querySelector("#chart-donout"), options);
 
     chart.render();
+
+    Livewire.on('update-chart', function(data){
+        // console.log(data);
+        chart.updateSeries(data.map((d) => parseInt(d)));
+    });
 </script>
 @endpush

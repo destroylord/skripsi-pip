@@ -20,6 +20,11 @@ class Criteria extends Model
         'is_active' => ActiveEnum::class
     ];
 
+    public function alternatives()
+    {
+        return $this->hasMany(Alternative::class);
+    }
+
     public function subCriterias()
     {
         return $this->hasMany(Subcriteria::class, 'parent_id', 'id');

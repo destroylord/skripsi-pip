@@ -1,9 +1,8 @@
 <?php
 
 namespace App\Repositories;
-
-use App\Models\Alternative;
-use App\Models\Criteria;
+;
+use App\Models\Period;
 use App\Models\Student;
 use Illuminate\Support\Facades\DB;
 
@@ -29,19 +28,20 @@ class AlternativeRepository
         return $data;
     }
 
-    public function index()
+    public function index(?Period $period)
     {
 
-        $criteria = Criteria::all();
-        $student = Student::all();
-
-        $student->map(function ($s) use ($criteria) {
-           $s->alternatives = $criteria->map(function ($c) use ($s) {
-               return Alternative::where('student_id', $s->id)->where('criteria_id', $c->id)->get();
+        if (!$period) {
+            return (object) ['criterias' => collect([]), 'students' => collect([])];
+        }
+        
+        $period->students->map(function ($s) use ($period) {
+           $s->alternatives = $period->criterias->map(function ($c) use ($s) {
+               return $c->alternatives()->where('student_id', $s->id)->get();
            });
            return $s;
         });
 
-        return (object) ['criterias' => $criteria, 'students' => $student];
+        return (object) ['criterias' => $period->criterias, 'students' => $period->students];
     }
 }

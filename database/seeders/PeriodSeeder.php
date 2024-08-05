@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Period;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,10 +13,11 @@ class PeriodSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($year = 2015; $year <= date('Y'); $year++) {
-            \App\Models\Period::create([
-                'name' => $year
+        for ($year = 2020; $year <= date('Y')-1; $year++) {
+            Period::create([
+                'name' => "$year/".($year + 1),
             ]);
         }
+        
     }
 }

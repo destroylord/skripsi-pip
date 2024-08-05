@@ -1,49 +1,4 @@
-<?php
-
-use function Livewire\Volt\{state, layout, computed, rules, boot, title, form, on};
-use App\Models\{Criteria, SubCriteria, Period};
-use App\Livewire\Forms\SubCriteriaForm;
-use App\Repositories\SubCriteriaRepository;
-
-form(SubCriteriaForm::class);
-
-state([
-    'criterias' => Criteria::all(),
-    'subCriterias' => (new SubCriteriaRepository())->getGrouped(),
-]);
-
-// On Create
-
-$saveSubCriteria = function() {
-    $this->form->save();
-    $this->form->reset();
-
-    $this->dispatch('subCriteria-saved');
-};
-
-$updateSubCriteria = function($id) {
-    $subCriteria = SubCriteria::find($id);
-    
-    $this->form->setSubCriteria($subCriteria);
-    $this->dispatch('show-modal');
-};
-
-
-$deleteSubCriteria = function (SubCriteria $subCriteria) {
-    $subCriteria->delete();
-    $this->dispatch('subCriteria-deleted');
-};
- 
-on(['reset-form' => function () {
-    $this->form->reset();
-    $this->resetValidation();
-}]);
-
-?>
-
-
 <div>
-
     <div class="col-lg-8">
         <div class="card">
             <div class="card-header">
@@ -56,7 +11,7 @@ on(['reset-form' => function () {
                         </p>
                     </div>
                 
-                    <button class="btn btn-primary w-25" 
+                    <button class="btn btn-primary w-50" 
                         type="button" 
                         data-bs-toggle="modal" 
                         data-bs-target="#exampleModalCenter">+ Tambah Sub Kriteria</button>
@@ -73,7 +28,7 @@ on(['reset-form' => function () {
                                     </tr>
                                 </thead>
                                     <tbody>
-                                    {{-- @foreach ($this->subCriterias as $criteriaGroup)
+                                    @foreach ($subCriterias as $criteriaGroup)
                                         @php $firstRow = true; @endphp
                                         @foreach ($criteriaGroup as $subCriteria)
                                         <tr>
@@ -81,12 +36,14 @@ on(['reset-form' => function () {
                                             <td>{{ $subCriteria->name }}</td>
                                             <td>{{ $subCriteria->value }}</td>
                                             <td>
-                                                <a href="#" class="btn btn-sm btn-warning" wire:click="updateSubCriteria({{ $subCriteria->id }})"><i class='bx bxs-edit' ></i></a>
-                                                <a href="#" class="btn btn-sm btn-danger" wire:click="deleteSubCriteria({{ $subCriteria->id }})"><i class='bx bxs-trash' ></i> </a>
+                                                <a href="#" class="btn btn-sm btn-warning" 
+                                                            wire:click="editSubCriteria({{ $subCriteria->id }})"><i class='bx bxs-edit' ></i></a>
+                                                <a href="#" class="btn btn-sm btn-danger"
+                                                            wire:click="deleteSubCriteria({{ $subCriteria->id }})"><i class='bx bxs-trash' ></i> </a>
                                             </td>
                                         </tr>
                                         @endforeach
-                                    @endforeach --}}
+                                    @endforeach
                                     </tbody>
                             </table>
                         </form>
@@ -106,17 +63,13 @@ on(['reset-form' => function () {
             Livewire.on('show-modal', () => {
                 $('#exampleModalCenter').modal('show');
             });
-
-            $('#exampleModalCenter').on('hidden.bs.modal', () => {
-                Livewire.dispatch('reset-form');
-            })
-            Livewire.on('subCriteria-saved', () => {
+            Livewire.on('hide-modal', () => {
                 $('#exampleModalCenter').modal('hide');
             });
-            Livewire.on('subCriteria-deleted', () => {
-                alert('Sub Kriteria Terhapus');
-            });
-
+            
+            Livewire.on('.btn-close', () => {
+                alert('close');
+            })
         </script>
     @endpush
 </div>

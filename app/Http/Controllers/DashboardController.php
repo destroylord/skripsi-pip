@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Period;
 use Illuminate\Http\Request;
 use App\Repositories\AlternativeRepository;
 use App\Repositories\NormalizationRepository;
@@ -21,7 +22,7 @@ class DashboardController extends Controller
         NormalizationRepository $normalizationRepository, 
         AlternativeRepository $AlternativeRepository)
     {
-        $alternatives = $AlternativeRepository->index();
+        $alternatives = $AlternativeRepository->index(Period::find(1));
         $normalized = $normalizationRepository->getCalculation($alternatives);
         $ranked = $rangkingRepository->getCalculation($normalized);
 

@@ -20,7 +20,7 @@ class CriteriaSeeder extends Seeder
                 'score' => 25,
                 'weight' => '0.25',
                 'type' => 'Cost',
-                'period_id' => 9,
+                'period_id' => 3,
                 'is_active' => ActiveEnum::ACTIVE,
             ],
             [
@@ -28,15 +28,15 @@ class CriteriaSeeder extends Seeder
                 'score' => 20,
                 'weight' => '0.2',
                 'type' => 'Benefit',
-                'period_id' => 9,
-                'is_active' => ActiveEnum::INACTIVE,
+                'period_id' => 3,
+                'is_active' => ActiveEnum::ACTIVE,
             ],
             [
                 'name' => 'Penghasilan Ibu',
                 'score' => 10,
                 'weight' => '0.1',
                 'type' => 'Cost',
-                'period_id' => 9,
+                'period_id' => 3,
                 'is_active' => ActiveEnum::ACTIVE,
             ],
             [
@@ -44,15 +44,15 @@ class CriteriaSeeder extends Seeder
                 'score' => 10,
                 'weight' => '0.1',
                 'type' => 'Benefit',
-                'period_id' => 9,
-                'is_active' => ActiveEnum::INACTIVE,
+                'period_id' => 3,
+                'is_active' => ActiveEnum::ACTIVE,
             ],
             [
                 'name' => 'Jarak tempuh',
                 'score' => 5,
                 'weight' => '0.05',
                 'type' => 'Cost',
-                'period_id' => 9,
+                'period_id' => 3,
                 'is_active' => ActiveEnum::ACTIVE,
             ],
             [
@@ -60,7 +60,7 @@ class CriteriaSeeder extends Seeder
                 'score' => 5,
                 'weight' => '0.05',
                 'type' => 'Benefit',
-                'period_id' => 9,
+                'period_id' => 3,
                 'is_active' => ActiveEnum::ACTIVE,
             ],
             [
@@ -68,16 +68,16 @@ class CriteriaSeeder extends Seeder
                 'score' => 15,
                 'weight' => '0.15',
                 'type' => 'Cost',
-                'period_id' => 9,
-                'is_active' => ActiveEnum::INACTIVE,
+                'period_id' => 3,
+                'is_active' => ActiveEnum::ACTIVE,
             ],
             [
                 'name' => 'Alasan Layak PIP',
                 'score' => 10,
                 'weight' => '0.1',
                 'type' => 'Benefit',
-                'period_id' => 9,
-                'is_active' => ActiveEnum::INACTIVE,
+                'period_id' => 3,
+                'is_active' => ActiveEnum::ACTIVE,
             ]
         ]);
     }

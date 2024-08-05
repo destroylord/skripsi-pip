@@ -61,7 +61,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    @if ($criteria->is_active == 'active')
+                                    @if ($criteria->is_active == \App\Enum\ActiveEnum::ACTIVE->value)
                                         <div class="d-flex justify-content-center gap-2">   
                                             <button
                                                 class="btn btn-warning mr-2"
