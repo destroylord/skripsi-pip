@@ -28,7 +28,7 @@
 @endpush
 @section('content')
         <!-- ========================= preloader start ========================= -->
-        <x-spinner />
+        {{-- <x-spinner /> --}}
         <!-- preloader end -->
         <!-- ========================= hero-section start ========================= -->
         <section id="home" class="hero-section">
